@@ -1,0 +1,50 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "tech"
+  ],
+  "created": "2026-11-12T21:33:24.027Z",
+  "demoAnchor": {
+    "dayOffset": 6,
+    "deadlineHours": null,
+    "durationMin": null,
+    "time": "10:00"
+  },
+  "description": "A 24-hour build sprint for beginners.",
+  "eligibilityStatus": "confirmed",
+  "eligibleYears": [
+    "first-year",
+    "sophomore",
+    "junior",
+    "senior"
+  ],
+  "end": null,
+  "id": "demo-postponed-hackathon",
+  "imageRef": null,
+  "isDemo": true,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-12T21:33:24.027Z",
+  "location": "Demo Engineering Atrium",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Demo Tech Collective",
+  "registration": "required",
+  "registrationStatus": "open",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": "https://example.com/penn-events-demo-rsvp",
+  "sourceLabel": "Demo fixture (not a real announcement)",
+  "start": null,
+  "status": "postponed",
+  "statusNote": "Postponed. A new date has not been announced.",
+  "timezone": "America/New_York",
+  "title": "Weekend Build Sprint",
+  "updated": "2026-11-12T21:33:24.027Z"
+}

@@ -1,0 +1,50 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "finance"
+  ],
+  "created": "2026-11-12T21:33:24.027Z",
+  "demoAnchor": {
+    "dayOffset": 8,
+    "deadlineHours": 96,
+    "durationMin": 120,
+    "time": "19:00"
+  },
+  "description": "Teams trade a simulated market. Open to the club's general body members who submit the short application.",
+  "eligibilityStatus": "confirmed",
+  "eligibleYears": [
+    "first-year",
+    "sophomore",
+    "junior",
+    "senior"
+  ],
+  "end": null,
+  "id": "demo-members-trading-sim",
+  "imageRef": null,
+  "isDemo": true,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-12T21:33:24.027Z",
+  "location": "Demo Lab B",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Demo Investing Club",
+  "registration": "required",
+  "registrationStatus": "open",
+  "restrictions": {
+    "application": true,
+    "invitationOnly": false,
+    "membership": "General body members",
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": "https://example.com/penn-events-demo-rsvp",
+  "sourceLabel": "Demo fixture (not a real announcement)",
+  "start": null,
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Trading Simulation Night",
+  "updated": "2026-11-12T21:33:24.027Z"
+}

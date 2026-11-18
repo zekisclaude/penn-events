@@ -1,0 +1,51 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "finance",
+    "consulting"
+  ],
+  "created": "2026-11-12T21:33:24.027Z",
+  "demoAnchor": {
+    "dayOffset": 5,
+    "deadlineHours": 72,
+    "durationMin": 90,
+    "time": "18:00"
+  },
+  "description": "Peer reviewers mark up one-page resumes for internship applications. Bring a printed copy or a PDF.",
+  "eligibilityStatus": "confirmed",
+  "eligibleYears": [
+    "first-year",
+    "sophomore",
+    "junior",
+    "senior"
+  ],
+  "end": null,
+  "id": "demo-resume-review-night",
+  "imageRef": null,
+  "isDemo": true,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-12T21:33:24.027Z",
+  "location": "Demo Hall 120",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Demo Career Collective",
+  "registration": "required",
+  "registrationStatus": "open",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": "https://example.com/penn-events-demo-rsvp",
+  "sourceLabel": "Demo fixture (not a real announcement)",
+  "start": null,
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Resume Review Night",
+  "updated": "2026-11-12T21:33:24.027Z"
+}

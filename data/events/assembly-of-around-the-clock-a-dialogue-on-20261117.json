@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/ais.penn/p/DfpZ8qxMnz3/",
+  "categories": [
+    "culture"
+  ],
+  "created": "2026-11-13T03:54:18.552Z",
+  "demoAnchor": null,
+  "description": "Dinner dialogue on punctuality, productivity, and cultural expectations around time. Food provided.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": "2026-11-18T01:30:00.000Z",
+  "id": "assembly-of-around-the-clock-a-dialogue-on-20261117",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "Gregory College House, Class of 1925 Basement Lounge, 3941 Irving Street",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Assembly of International Students (AIS) & ISSS",
+  "registration": "required",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": "rsvp at link in bio / REGISTER HERE QR code",
+  "rsvpUrl": null,
+  "sourceLabel": "@ais.penn on Instagram",
+  "start": "2026-11-18T00:00:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Around the Clock: A Dialogue on Time Around the World",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

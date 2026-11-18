@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/upenncsa/p/DfkpT_3hiVj/",
+  "categories": [
+    "culture"
+  ],
+  "created": "2026-11-13T03:54:18.614Z",
+  "demoAnchor": null,
+  "description": "Intercollegiate formal; light appetizers; formal attire.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": null,
+  "id": "penn-csa-with-shanghai-after-dark-20261120",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": null,
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Penn CSA with Columbia, Princeton, NYU",
+  "registration": "required",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": "18+ to enter; open bar for 21+",
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": "Tickets in bio (Drop Two)",
+  "rsvpUrl": null,
+  "sourceLabel": "@upenncsa on Instagram",
+  "start": "2026-11-21T00:00:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Shanghai After Dark Intercollegiate Formal",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

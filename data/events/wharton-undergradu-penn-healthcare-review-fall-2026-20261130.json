@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/wuhcpenn/p/DfOK7_SxE3W/",
+  "categories": [
+    "other"
+  ],
+  "created": "2026-11-13T03:54:18.631Z",
+  "demoAnchor": null,
+  "description": "Journal launch with pediatric leaders Dr. Lynne Yao (FDA) and Dr. Catherine Bollard (Children's National Hospital).",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": null,
+  "id": "wharton-undergradu-penn-healthcare-review-fall-2026-20261130",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "JMHH F85",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Wharton Undergraduate Healthcare Club (WUHC) / Penn Healthcare Review",
+  "registration": "required",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": "Scan the QR code on flyer for tickets",
+  "rsvpUrl": null,
+  "sourceLabel": "@wuhcpenn on Instagram",
+  "start": "2026-11-30T23:00:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Penn Healthcare Review Fall 2026 Journal Launch",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

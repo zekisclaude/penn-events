@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/whartonwomen/p/DfZ85kZPsuo/",
+  "categories": [
+    "other"
+  ],
+  "created": "2026-11-13T03:54:11.317Z",
+  "demoAnchor": null,
+  "description": "Alumnae and student homecoming brunch; space is limited.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": "2026-11-14T17:00:00.000Z",
+  "id": "wharton-women-wharton-women-homecoming-brunch-20261114",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "The Board and Brew Café, 33rd & Chestnut",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Wharton Women",
+  "registration": "unconfirmed",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": null,
+  "sourceLabel": "@whartonwomen on Instagram",
+  "start": "2026-11-14T15:30:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Wharton Women Homecoming Brunch",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

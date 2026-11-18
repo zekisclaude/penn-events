@@ -1,0 +1,45 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "tech"
+  ],
+  "created": "2026-11-12T21:42:31.174Z",
+  "demoAnchor": null,
+  "description": "Hands-on introduction to small robot kits. Demo record for the end-to-end test.",
+  "eligibilityStatus": "confirmed",
+  "eligibleYears": [
+    "first-year",
+    "sophomore",
+    "junior",
+    "senior"
+  ],
+  "end": null,
+  "id": "demo-robotics-club-intro-to-robotics-night-20261119",
+  "imageRef": null,
+  "isDemo": true,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-12T21:43:31.117Z",
+  "location": "Demo Lab C",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Demo Robotics Club",
+  "registration": "required",
+  "registrationStatus": "open",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": "2026-11-19T04:59:00.000Z",
+  "rsvpInstructions": null,
+  "rsvpUrl": "https://example.com/penn-events-demo-robotics",
+  "sourceLabel": "Demo fixture (not a real announcement)",
+  "start": "2026-11-20T00:00:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Intro to Robotics Night",
+  "updated": "2026-11-12T21:43:31.117Z"
+}

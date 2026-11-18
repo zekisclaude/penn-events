@@ -1,0 +1,47 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "finance"
+  ],
+  "created": "2026-11-12T21:33:24.027Z",
+  "demoAnchor": {
+    "dayOffset": 1,
+    "deadlineHours": null,
+    "durationMin": 60,
+    "time": "16:00"
+  },
+  "description": "Small-group conversations with upperclassmen about finance recruiting timelines.",
+  "eligibilityStatus": "confirmed",
+  "eligibleYears": [
+    "first-year"
+  ],
+  "end": null,
+  "id": "demo-first-year-coffee-chats",
+  "imageRef": null,
+  "isDemo": true,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-12T21:33:24.027Z",
+  "location": "Demo Cafe, 2nd floor",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Demo Finance Society",
+  "registration": "optional",
+  "registrationStatus": "open",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": "https://example.com/penn-events-demo-rsvp",
+  "sourceLabel": "Demo fixture (not a real announcement)",
+  "start": null,
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "First-Year Coffee Chats",
+  "updated": "2026-11-12T21:33:24.027Z"
+}

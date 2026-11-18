@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/whartonasia/p/De2oR9LxDra/",
+  "categories": [
+    "finance"
+  ],
+  "created": "2026-11-13T03:54:18.570Z",
+  "demoAnchor": null,
+  "description": "Recruitment process and APAC career opportunities at Bank of America.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": "2026-11-17T23:00:00.000Z",
+  "id": "wharton-asia-bank-of-america-apac-careers-event-20261117",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "JMHH F50",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Wharton Asia Exchange (WAX) with Bank of America",
+  "registration": "required",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": "2026-10-24T03:59:00.000Z",
+  "rsvpInstructions": "Sign up through the link in bio",
+  "rsvpUrl": null,
+  "sourceLabel": "@whartonasia on Instagram",
+  "start": "2026-11-17T21:30:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Bank of America APAC Careers Event",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

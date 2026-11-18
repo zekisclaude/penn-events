@@ -1,0 +1,45 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "culture"
+  ],
+  "created": "2026-11-12T21:33:24.027Z",
+  "demoAnchor": {
+    "dayOffset": 1,
+    "deadlineHours": null,
+    "durationMin": 180,
+    "time": "19:00"
+  },
+  "description": "Food, music and performances. The announcement did not say who may attend.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": null,
+  "id": "demo-cultural-night",
+  "imageRef": null,
+  "isDemo": true,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-12T21:33:24.027Z",
+  "location": "Demo Ballroom",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Demo Cultural Association",
+  "registration": "unconfirmed",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": null,
+  "sourceLabel": "Demo fixture (not a real announcement)",
+  "start": null,
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Fall Cultural Night",
+  "updated": "2026-11-12T21:33:24.027Z"
+}

@@ -1,0 +1,16 @@
+{
+  "accessStatus": "Not subscribed yet (dedicated inbox not set up)",
+  "categories": [
+    "consulting",
+    "other"
+  ],
+  "collectionMethod": "Newsletter email to the dedicated inbox, plus Instagram via the dedicated account",
+  "id": "wuhc",
+  "instagram": "@wuhcpenn",
+  "lastSuccessfulCheck": null,
+  "name": "Wharton Undergraduate Healthcare Club",
+  "newsletterUrl": "https://mailchi.mp/dc814bf8a45f/wuhclistserv2018",
+  "notes": "Listserv link is from 2018; confirm it still works.",
+  "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.",
+  "website": "https://wuhcpenn.org"
+}

@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/upennsas/p/DfQj0jUMjI1/",
+  "categories": [
+    "other"
+  ],
+  "created": "2026-11-13T03:54:11.315Z",
+  "demoAnchor": null,
+  "description": "Grand opening of a sponsor's shop in Fishtown.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": "2026-11-14T22:00:00.000Z",
+  "id": "tijori-sponsor-of-tijori-grand-opening-fishtown-20261114",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "Fishtown (address not stated)",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Tijori (sponsor of SAS)",
+  "registration": "unconfirmed",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": null,
+  "sourceLabel": "@shoptijori on Instagram",
+  "start": "2026-11-14T15:00:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Tijori Grand Opening (Fishtown)",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

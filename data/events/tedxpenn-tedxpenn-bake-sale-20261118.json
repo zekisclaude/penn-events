@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/tedxpenn/p/Dfh7bKrI9zF/",
+  "categories": [
+    "other"
+  ],
+  "created": "2026-11-13T03:54:18.580Z",
+  "demoAnchor": null,
+  "description": "Bake sale: s'mores cookies and brownies.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": "2026-11-18T23:00:00.000Z",
+  "id": "tedxpenn-tedxpenn-bake-sale-20261118",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "Locust Walk outside the ARCH",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "TEDxPenn",
+  "registration": "optional",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": "Preorder link in bio",
+  "rsvpUrl": null,
+  "sourceLabel": "@tedxpenn on Instagram",
+  "start": "2026-11-18T16:00:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "TEDxPenn Bake Sale",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

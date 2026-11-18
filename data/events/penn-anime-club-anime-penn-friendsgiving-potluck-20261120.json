@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/animeatpenn/p/DfoHe9wxwsq/",
+  "categories": [
+    "culture"
+  ],
+  "created": "2026-11-13T03:54:18.609Z",
+  "demoAnchor": null,
+  "description": "Yearly Friendsgiving potluck with Pokemon card painting; supplies provided.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": "2026-11-21T05:00:00.000Z",
+  "id": "penn-anime-club-anime-penn-friendsgiving-potluck-20261120",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "Harrison College House Mezzanine",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Penn Anime Club (Anime@Penn)",
+  "registration": "optional",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": "Optional: sign up on the spreadsheet in bio to bring a dish",
+  "rsvpUrl": null,
+  "sourceLabel": "@animeatpenn on Instagram",
+  "start": "2026-11-21T01:00:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Anime@Penn Friendsgiving Potluck & Pokemon Card Painting",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/pennbas/p/DfS1DkNvJIN/",
+  "categories": [
+    "culture"
+  ],
+  "created": "2026-11-13T03:54:11.312Z",
+  "demoAnchor": null,
+  "description": "Homecoming brunch bringing together Black Penn alumni and current undergraduates.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": "2026-11-14T17:00:00.000Z",
+  "id": "black-alumni-homecoming-brunch-bas-bsl-umoja-20261114",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "The ARCH (enter on Locust Walk)",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Black Alumni Society, Black Student League, UMOJA",
+  "registration": "required",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": "Free RSVP",
+  "rsvpUrl": "https://luma.com/xjk9mq3u",
+  "sourceLabel": "@pennbas on Instagram",
+  "start": "2026-11-14T15:00:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Homecoming Brunch (BAS, BSL & UMOJA)",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

@@ -1,0 +1,50 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "tech"
+  ],
+  "created": "2026-11-12T21:33:24.027Z",
+  "demoAnchor": {
+    "dayOffset": 4,
+    "deadlineHours": null,
+    "durationMin": 60,
+    "time": "17:00"
+  },
+  "description": "An engineer explains the summer internship and the interview process.",
+  "eligibilityStatus": "confirmed",
+  "eligibleYears": [
+    "first-year",
+    "sophomore",
+    "junior",
+    "senior"
+  ],
+  "end": null,
+  "id": "demo-tech-info-session",
+  "imageRef": null,
+  "isDemo": true,
+  "jobEligibility": "The internship is for rising juniors and seniors. The info session itself is open to all undergraduates.",
+  "lastVerified": "2026-11-12T21:33:24.027Z",
+  "location": "Demo Engineering 101",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Demo Tech Collective",
+  "registration": "required",
+  "registrationStatus": "closed",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": "https://example.com/penn-events-demo-rsvp",
+  "sourceLabel": "Demo fixture (not a real announcement)",
+  "start": null,
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Software Internship Info Session",
+  "updated": "2026-11-12T21:33:24.027Z"
+}

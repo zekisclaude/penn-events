@@ -1,0 +1,13 @@
+import { launch, open } from './harness.mjs';
+const b = await launch(); const out = process.argv[2];
+let r = await open(b, { role: 'admin', now: '2026-11-14T17:00:00Z', width: 1280, height: 900 });
+await r.page.route('**fonts.g**', (x) => x.continue());
+await r.page.reload(); await r.page.waitForTimeout(1500);
+await r.page.screenshot({ path: out + '/t-desk.png' });
+await r.page.locator('[data-testid=block]').first().click(); await r.page.waitForTimeout(300);
+await r.page.screenshot({ path: out + '/t-pop.png' });
+await r.context.close();
+r = await open(b, { role: 'admin', now: '2026-11-14T17:00:00Z', width: 390, height: 844 });
+await r.page.screenshot({ path: out + '/t-phone.png' });
+console.log(r.errors);
+await b.close();

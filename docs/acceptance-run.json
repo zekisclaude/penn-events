@@ -1,0 +1,636 @@
+{
+ "at": "2026-11-14T18:58:49.137Z",
+ "site": "/home/user/penn-events/site/index.html",
+ "results": [
+  {
+   "name": "[1 year filter] All shows the unconfirmed event, labeled",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[1 year filter] First-year hides unconfirmed eligibility",
+   "pass": true,
+   "extra": "[\"Late Open Mic\",\"First-Year Coffee Chats\",\"Underclass Recruiting Panel\"]"
+  },
+  {
+   "name": "[1 year filter] First-year hides sophomore-only",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[1 year filter] First-year keeps first-year-only + all-undergrad",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[2 restrictions] Wharton restriction stays visible under First-year",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[1 year filter] Sophomore hides first-year-only and unconfirmed",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[2 restrictions] Membership + application restrictions shown on card",
+   "pass": true,
+   "extra": "Trading Simulation Night\n7 PM – 9 PM\nMembers only.\nMembership: General body members\nApplication required\n\nDemo Investing Club\n\nDemo Lab B\n\nRegistration required\nRSVP by Mon, Nov 16, 5 PM\nFinance\nDemo"
+  },
+  {
+   "name": "[3 persistence] Saved filters are written to this device",
+   "pass": true,
+   "extra": "{\"week\":1,\"year\":\"sophomore\",\"interests\":[],\"q\":\"\",\"view\":null}"
+  },
+  {
+   "name": "[3 persistence] Week + class year survive reload",
+   "pass": true,
+   "extra": "[\"Sophomore\",\"Next week\"] stored-after={\"week\":1,\"year\":\"sophomore\",\"interests\":[],\"q\":\"\",\"view\":null} url=http://127.0.0.1:8765/index.html"
+  },
+  {
+   "name": "[4 weeks/DST] Sun 11:30 PM ET still in Nov 9-15 week",
+   "pass": true,
+   "extra": "Find Penn events you can actually attend\nFilters\nAll\nFirst-year\nSophomore\nFinance\nConsulting\nTech\nCulture\nOther\nSearch by title or organizer\nReset\nThis week\nNext week\nNovember 2026\nView\nWeek\nSchedule\n"
+  },
+  {
+   "name": "[4 weeks/DST] Mon 12:05 AM ET rolls to Nov 16-22",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[4 weeks/DST] Fall-back week is Oct 26-Nov 1",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[4 weeks/DST] 11:30 PM EST on Nov 1 (04:30Z Nov 2) lands on Sunday Nov 1",
+   "pass": true,
+   "extra": "Fall-back Sunday Late Event\n11:30 PM\n(end time not listed)\nOpen to all Penn undergraduates.\n\nTest Org\n\nTest Hall\n\nNo registration required\nTech"
+  },
+  {
+   "name": "[4 weeks/DST] 1:30 AM EDT on Nov 1 shown as 1:30 AM",
+   "pass": true,
+   "extra": "Fall-back Early Event\n1:30 AM\n(end time not listed)\nOpen to all Penn undergraduates.\n\nTest Org\n\nTest Hall\n\nNo registration required\nTech"
+  },
+  {
+   "name": "[4 weeks/DST] Spring-forward: Sun 11:30 PM EDT in Mar 8-14 week",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[4 weeks/DST] Spring-forward event shows 7 PM local",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[4 weeks/DST] Mon 12:10 AM EDT rolls to Mar 15-21",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[5 ended] Both listed before start",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[5 ended] No invented end time on card",
+   "pass": true,
+   "extra": "No End Time Talk\n6 PM\n(end time not listed)\nOpen to all Penn undergraduates.\n\nTest Org\n\nTest Hall\n\nNo registration required\nTech"
+  },
+  {
+   "name": "[5 ended] Event with end time leaves after it ends",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[5 ended] Event without end time stays through its local date",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[5 ended] ...still there at 11:50 PM",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[5 ended] ...gone after local midnight",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[5 ended] Past event detail URL still works and says it ended",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[6 RSVP states] Deadline <48h is highlighted with countdown",
+   "pass": true,
+   "extra": "Closing Soon Event\n6 PM\n(end time not listed)\nOpen to all Penn undergraduates.\n\nTest Org\n\nTest Hall\n\nRegistration required\nRSVP by Fri, Nov 13, 5 PM (closes in 24 hours)\nTech"
+  },
+  {
+   "name": "[6 RSVP states] ...in red, bold",
+   "pass": true,
+   "extra": "tabular font-semibold text-penred"
+  },
+  {
+   "name": "[6 RSVP states] Deadline >48h shown without countdown, separate from event date",
+   "pass": true,
+   "extra": "Far Deadline Event\n6 PM\n(end time not listed)\nOpen to all Penn undergraduates.\n\nTest Org\n\nTest Hall\n\nRegistration required\nRSVP by Tue, Nov 17, 5 PM\nTech"
+  },
+  {
+   "name": "[6 RSVP states] Passed deadline -> RSVP closed",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[6 RSVP states] Registration required label",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[6 RSVP states] Active RSVP action when link verified and open",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[6 RSVP states] No RSVP action after deadline",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[6 RSVP states] No RSVP action without a link",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[6 RSVP states] Unknown deadline is stated, not claimed open",
+   "pass": true,
+   "extra": "All events\nTech\nUnknown Deadline Event\nOpen to all Penn undergraduates.\n\nTest Org\n\nWHEN\nWednesday, November 18, 2026\n6 PM (end time not listed) · Philadelphia time\nWHERE\nTest Hall\nWHO CAN ATTEND\nOpen to all Penn undergraduates.\nREGISTRATION\nRegistration required\n\nNo RSVP deadline was listed, so we can't confirm registration is still open.\n\nRSVP\n(opens the organizer's site)\nShare\nABOUT\n\nTest record.\n\nSource\n\nSource: Test. Last verified Thu, Nov 12.\n\nBrowse more events"
+  },
+  {
+   "name": "[6 RSVP states] javascript: RSVP link never rendered",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[6 RSVP states] Closed registration: label + no action; job eligibility separate",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[6 RSVP states] No registration required state",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[6 RSVP states] Registration details unconfirmed state",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[6 RSVP states] Registration optional state",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[7 canceled/postponed] Canceled + postponed are not in the upcoming list",
+   "pass": true,
+   "extra": "[\"Late Open Mic\",\"First-Year Coffee Chats\",\"Fall Cultural Night\",\"Sophomore Case Interview Workshop\",\"Underclass Recruiting Panel\",\"Software Internship Info Session\",\"Resume Review Night\",\"Intro to Robotics Night\",\"Trading Simulation Night\"]"
+  },
+  {
+   "name": "[7 canceled/postponed] Canceled detail: status shown, RSVP disabled",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[7 canceled/postponed] Postponed detail: status shown, original date labeled, RSVP disabled",
+   "pass": true,
+   "extra": "All events\nTech\nDemo\nWeekend Build Sprint\nOpen to all Penn undergraduates.\n\nDemo Tech Collective\n\nPostponed. Postponed. A new date has not been announced.\nWHEN\nOriginally Wednesday, November 18, 2026\n10 AM (end time not listed) · Philadelphia time\nWHERE\nDemo Engineering Atrium\nWHO CAN ATTEND\nOpen to all Penn undergraduates.\nREGISTRATION\nRegistration required\n\nNo RSVP deadline was listed.\n\nShare\n\nDemo record for the private preview. Its organizer is fictional and its links do not register you for"
+  },
+  {
+   "name": "[8 empty state] Empty state names the active filters",
+   "pass": true,
+   "extra": "No events match this week · first-year eligibility · Consulting.\n\nOnly events that explicitly list first-years are shown. Events with unconfirmed eligibility appear under All.\n\nSee next week\nClear interest filters"
+  },
+  {
+   "name": "[8 empty state] Offers See next week + Clear interest filters",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[8 empty state] Clearing interests keeps First-year",
+   "pass": true,
+   "extra": "[\"First-year\",\"This week\"]"
+  },
+  {
+   "name": "[8 empty state] See next week keeps class year + interest",
+   "pass": true,
+   "extra": "[\"First-year\",\"Consulting\",\"Next week\"]"
+  },
+  {
+   "name": "[8 empty state] Reset returns to This week / All",
+   "pass": true,
+   "extra": "[\"All\",\"This week\"]"
+  },
+  {
+   "name": "[8 empty state] Search by title",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[8 empty state] Search by organizer",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[9 direct URL] Shared link opens the right event despite saved filters that exclude it",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[10 refresh] Refreshing a detail URL keeps the event",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[11 sharing] Clipboard fallback copies the canonical event URL",
+   "pass": true,
+   "extra": "https://claude.ai/artifact/PWmhpLc7gmLMuXNwNL82se#e-demo-sophomore-case-workshop"
+  },
+  {
+   "name": "[11 sharing] Success feedback shown",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[11 sharing] Clipboard failure: error message + selectable link",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[11 sharing] Native share used when available, with canonical URL",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[11 sharing] Native share and copy are recorded as different actions",
+   "pass": true,
+   "extra": "[\"event_view\",\"share_native\"]"
+  },
+  {
+   "name": "[9 direct URL] Unknown event id shows a not-found page with a way back",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[12 authorization] view: #admin shows no admin UI or draft content",
+   "pass": true,
+   "extra": "Penn Events\nAdmin access required\n\nThis view is for the site's owner and editors. Drafts and source records are protected by the database rules, not just hidden here.\n\nIndependent student project. Not affiliated with the University of Pennsylvania.\n\nEvent details come from organizers' announcements."
+  },
+  {
+   "name": "[12 authorization] view: direct review read and event write are refused by rules",
+   "pass": true,
+   "extra": "{\"read\":\"permission_denied\",\"write\":\"permission_denied\"}"
+  },
+  {
+   "name": "[12 authorization] interact: #admin shows no admin UI or draft content",
+   "pass": true,
+   "extra": "Penn Events\nAdmin access required\n\nThis view is for the site's owner and editors. Drafts and source records are protected by the database rules, not just hidden here.\n\nIndependent student project. Not affiliated with the University of Pennsylvania.\n\nEvent details come from organizers' announcements."
+  },
+  {
+   "name": "[12 authorization] interact: direct review read and event write are refused by rules",
+   "pass": true,
+   "extra": "{\"read\":\"permission_denied\",\"write\":\"permission_denied\"}"
+  },
+  {
+   "name": "[12 authorization] signedout: #admin shows no admin UI or draft content",
+   "pass": true,
+   "extra": "Penn Events\nAdmin access required\n\nChecking access…\n\nIndependent student project. Not affiliated with the University of Pennsylvania.\n\nEvent details come from organizers' announcements. Confirm with the organizer before you go."
+  },
+  {
+   "name": "[12 authorization] signed-out visitor still gets the published snapshot",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[12 authorization] Bundle embeds no draft/source/private fields",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[12 authorization] No API keys or secrets in the bundle",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[13 dedupe] JSON import creates a draft",
+   "pass": true,
+   "extra": "o the shared database. Only the owner and editors can read drafts or publish.\n\nReview queue (2)\nAdd announcement\nPublished (12)\nSources\nPilot activity\nAXOM Partners Info Session: 2028 Summer Analyst Program\nAXOM Partners (posted by Penn Career Services) · calendar\nDraft\n3 flags\nDemo Chess Night <img src=x onerror=\"window.__XSS=1\">\nDemo Chess Club · email\nDraft\n2 flags\n\nSelect a draft to review it."
+  },
+  {
+   "name": "[13 dedupe] javascript: announcement link dropped with a warning",
+   "pass": true,
+   "extra": "nnouncement\nUpload flyer\nImport JSON\nRecords in the Penn Events import format\n\nUse this when Claude extracts announcements in chat. Times are Philadelphia local, written YYYY-MM-DDTHH:mm. Every record becomes a draft.\n\nValidate\n1 proposed draft\n\nDemo Chess Night <img src=x onerror=\"window.__XSS=1\"> · Demo Chess Club\n\nTue, Nov 17, 7 PM · Open to all Penn undergraduates.\n\nFlag: Year inferred from capture date\n\nFlag: Announcement link \"javascript:alert(1)\" is not an http(s) link and was dropped.\n\neligibility\n\nSource“Open to all undergrads.”\n\nstart\n\nSource“Tue 11/17 7pm”\n\nCreate 1 draft for review"
+  },
+  {
+   "name": "[13 dedupe] Draft is NOT published by import",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[13 dedupe] Philadelphia local time stored as correct UTC instant",
+   "pass": true,
+   "extra": "2026-11-18T00:00:00.000Z"
+  },
+  {
+   "name": "[13 dedupe] Message-ID stored hashed in ingest log only",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[13 dedupe] Importing the same announcement twice creates no duplicate",
+   "pass": true,
+   "extra": "cords in the Penn Events import format\n\nUse this when Claude extracts announcements in chat. Times are Philadelphia local, written YYYY-MM-DDTHH:mm. Every record becomes a draft.\n\nValidate\n\nSkipped: this announcement was already imported (demo-chess-club-demo-chess-night-img-src-x-onerror-20261117)."
+  },
+  {
+   "name": "[13 dedupe] A repeat from a different message attaches as a source, not a new record",
+   "pass": true,
+   "extra": "cords in the Penn Events import format\n\nUse this when Claude extracts announcements in chat. Times are Philadelphia local, written YYYY-MM-DDTHH:mm. Every record becomes a draft.\n\nValidate\n\nAlready in review as demo-chess-club-demo-chess-night-img-src-x-onerror-20261117; the new source was attached."
+  },
+  {
+   "name": "[13 dedupe] A distinct session same day is kept separate, not silently merged",
+   "pass": true,
+   "extra": "[\"demo-chess-club-demo-chess-night-img-src-x-onerror-20261117\",\"demo-chess-club-demo-chess-night-late-session-20261117\"]"
+  },
+  {
+   "name": "[13 dedupe] Invalid date and malformed URL are rejected/flagged",
+   "pass": true,
+   "extra": "ste announcement\nUpload flyer\nImport JSON\nRecords in the Penn Events import format\n\nUse this when Claude extracts announcements in chat. Times are Philadelphia local, written YYYY-MM-DDTHH:mm. Every record becomes a draft.\n\nValidate\n1 proposed draft\n\nBad Date · X\n\nNo confirmed date · Eligibility not confirmed.\n\nFlag: Start \"2026-02-30T10:00\" is not a valid date (use YYYY-MM-DDTHH:mm, Philadelphia time).\n\nFlag: RSVP link \"notaurl\" is not an http(s) link and was dropped.\n\nCreate 1 draft for review"
+  },
+  {
+   "name": "[13 dedupe] Malformed JSON gives a clear error",
+   "pass": true,
+   "extra": "ncements in chat. Times are Philadelphia local, written YYYY-MM-DDTHH:mm. Every record becomes a draft.\n\nValidate\n\nNot valid JSON: Expected property name or '}' in JSON at position 1 (line 1 column 2)"
+  },
+  {
+   "name": "[14 approve -> finder] Queue lists the new drafts",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[14 approve -> finder] Editor shows source evidence beside fields + extractor flag",
+   "pass": true,
+   "extra": "Admin\n\nChanges save to the shared database. Only the owner and editors can read drafts or publish.\n\nReview queue (4)\nAdd announcement\nPublished (12)\nSources\nPilot activity\nAXOM Partners Info Session: 2028 Summer Analyst Program\nAXOM Partners (posted by Penn Career Services) · calendar\nDraft\n3 flags\nDemo Chess Night <img src=x onerror=\"window.__XSS=1\">\nDemo Chess Club · email\nDraft\n2 flags\nDemo Chess Night Late Session\nDemo Chess Club · email\nDraft\n2 flags\nBad Date\nX · json\nDraft\n3 blocking\n2 flags\nDemo Chess Night <img src=x onerror=\"window.__XSS=1\">\n\nDraft id demo-chess-club-demo-chess-night-img-src-x-onerror-20261117. Public URL after approval: https://claude.ai/artifact/PWmhpLc7gmLMuXNwNL82se#e-demo-chess-club-demo-chess-night-img-src-x-onerror-20261117\n\nClose\n\nExtractor flag: Year infe"
+  },
+  {
+   "name": "[14 approve -> finder] Possible duplicate flagged for the other session",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[14 approve -> finder] Imported HTML is rendered as text, not executed",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[14 approve -> finder] Before approval the draft is not in the student finder",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[14 approve -> finder] Approve gives confirmation",
+   "pass": true,
+   "extra": "ags\nBad Date\nX · json\nDraft\n3 blocking\n2 flags\n\nSelect a draft to review it.\n\nIndependent student project. Not affiliated with the University of Pennsylvania.\n\nEvent details come from organizers' announcements. Confirm with the organizer before you go.\n\nApproved. The event is now live in the finder."
+  },
+  {
+   "name": "[14 approve -> finder] After approval the same record shows in the student finder",
+   "pass": true,
+   "extra": "Demo Chess Night <img src=x onerror=\"window.__XSS=1\">\n7 PM\n(end time not listed)\nOpen to all Penn undergraduates.\n\nDemo Chess Club\n\nDemo Hall 9\n\nRegistration required\nRSVP by Mon, Nov 16, 11:59 PM\nOther"
+  },
+  {
+   "name": "[14 approve -> finder] Student view never executes imported markup",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[14 approve -> finder] Published record carries no private source material",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[15 correction keeps URL] Correction updates the same id",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[15 correction keeps URL] Change history records the changed field",
+   "pass": true,
+   "extra": "{\"at\":\"2026-11-14T18:58:22.324Z\",\"action\":\"Correction saved\",\"fields\":[\"location\"]}"
+  },
+  {
+   "name": "[15 correction keeps URL] Same URL shows corrected info",
+   "pass": true,
+   "extra": "All events\nOther\nDemo Chess Night <img src=x onerror=\"window.__XSS=1\">\nOpen to all Penn undergraduates.\n\nDemo Chess Club\n\nWHEN\nTuesday, November 17, 2026\n7 PM (end time not listed) · Philadelphia time\nWHERE\nDemo Hall 12 (room changed)\nWHO CAN ATTEND\nOpen to all Penn undergraduates.\nREGISTRATION\nRegi"
+  },
+  {
+   "name": "[15 correction keeps URL] Cancel from admin: detail shows Canceled and RSVP is removed",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[15 correction keeps URL] Postpone keeps the id",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[16 persistence] Records persist after reload (store, not page memory)",
+   "pass": true,
+   "extra": "[\"Demo Hall 12 (room changed)\",\"scheduled\"]"
+  },
+  {
+   "name": "[review actions] Needs clarification keeps it out of the finder",
+   "pass": true,
+   "extra": "needs_clarification"
+  },
+  {
+   "name": "[review actions] Reject never publishes",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[review actions] Real extracted draft is still an unpublished draft",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[paste extraction] Pasted announcement becomes a draft only",
+   "pass": true,
+   "extra": "[\"axom-partners-axom-partners-info-session-2028-20261119\",\"demo-canceled-mixer\",\"demo-cultural-night\",\"demo-first-year-coffee-chats\",\"demo-members-trading-sim\",\"demo-open-mic\",\"demo-past-speaker\",\"demo-postponed-hackathon\",\"demo-resume-review-night\",\"demo-robotics-club-intro-to-robotics-night-20261119\",\"demo-sophomore-case-workshop\",\"demo-tech-info-session\",\"demo-wharton-underclass-panel\",\"demo-chess-club-demo-chess-night-img-src-x-onerror-20261117\",\"demo-chess-club-demo-chess-night-late-session-20261117\",\"x-bad-date-tbd\",\"demo-paste-org-demo-pasted-event-tbd\"]"
+  },
+  {
+   "name": "[paste extraction] Missing date stays missing and blocks approval",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[paste extraction] Approve is disabled while a must-fix item remains",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[paste extraction] Extraction prompt carries the never-guess rules and treats source as data",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[17 analytics] visit, event_view, rsvp_click, share_copy, filter_change, empty_result each recorded",
+   "pass": true,
+   "extra": "[\"visit\",\"filter_change\",\"filter_change\",\"empty_result\",\"filter_change\",\"event_view\",\"share_copy\",\"rsvp_click\"]"
+  },
+  {
+   "name": "[17 analytics] Only implemented action types are recorded",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[17 analytics] Metric records hold no personal data (fields: type,eventId,isDemoEvent,detail,device,day,at,admin)",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[17 analytics] Demo-event and admin traffic are flagged for filtering",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[17 analytics] Second load same day does not double-count the visit",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[17 analytics] View-only visitors: metric write refused silently, page still works",
+   "pass": true,
+   "extra": "[\"Failed to load resource: net::ERR_FAILED\"]"
+  },
+  {
+   "name": "[18 quality] no horizontal scroll at 375px on #home",
+   "pass": true,
+   "extra": "scrollWidth 375"
+  },
+  {
+   "name": "[18 quality] no console errors at 375px on #home",
+   "pass": true,
+   "extra": "[\"Failed to load resource: net::ERR_FAILED\"]"
+  },
+  {
+   "name": "[18 quality] no horizontal scroll at 375px on #e-demo-members-trading-sim",
+   "pass": true,
+   "extra": "scrollWidth 375"
+  },
+  {
+   "name": "[18 quality] no console errors at 375px on #e-demo-members-trading-sim",
+   "pass": true,
+   "extra": "[\"Failed to load resource: net::ERR_FAILED\"]"
+  },
+  {
+   "name": "[18 quality] no horizontal scroll at 375px on #admin",
+   "pass": true,
+   "extra": "scrollWidth 375"
+  },
+  {
+   "name": "[18 quality] no console errors at 375px on #admin",
+   "pass": true,
+   "extra": "[\"Failed to load resource: net::ERR_FAILED\"]"
+  },
+  {
+   "name": "[18 quality] no horizontal scroll at 390px on #home",
+   "pass": true,
+   "extra": "scrollWidth 390"
+  },
+  {
+   "name": "[18 quality] no console errors at 390px on #home",
+   "pass": true,
+   "extra": "[\"Failed to load resource: net::ERR_FAILED\"]"
+  },
+  {
+   "name": "[18 quality] touch targets >= 44px tall on phone home",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[18 quality] every form control has a label",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[18 quality] keyboard focus is visible",
+   "pass": true,
+   "extra": "{\"tag\":\"BUTTON\",\"outline\":\"solid 2px\",\"shadow\":\"none\"}"
+  },
+  {
+   "name": "[18 quality] first event card starts within the first phone screen",
+   "pass": true,
+   "extra": "top 502"
+  },
+  {
+   "name": "[18 quality] footer disclaimer present",
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "name": "[18 quality] cards are reachable by keyboard (link/button)",
+   "pass": true,
+   "extra": "A"
+  },
+  {
+   "name": "[18 quality] no horizontal scroll at 390px on #e-demo-members-trading-sim",
+   "pass": true,
+   "extra": "scrollWidth 390"
+  },
+  {
+   "name": "[18 quality] no console errors at 390px on #e-demo-members-trading-sim",
+   "pass": true,
+   "extra": "[\"Failed to load resource: net::ERR_FAILED\"]"
+  },
+  {
+   "name": "[18 quality] no horizontal scroll at 390px on #admin",
+   "pass": true,
+   "extra": "scrollWidth 390"
+  },
+  {
+   "name": "[18 quality] no console errors at 390px on #admin",
+   "pass": true,
+   "extra": "[\"Failed to load resource: net::ERR_FAILED\"]"
+  },
+  {
+   "name": "[18 quality] no horizontal scroll at 1280px on #home",
+   "pass": true,
+   "extra": "scrollWidth 1280"
+  },
+  {
+   "name": "[18 quality] no console errors at 1280px on #home",
+   "pass": true,
+   "extra": "[\"Failed to load resource: net::ERR_FAILED\"]"
+  },
+  {
+   "name": "[18 quality] no horizontal scroll at 1280px on #e-demo-members-trading-sim",
+   "pass": true,
+   "extra": "scrollWidth 1280"
+  },
+  {
+   "name": "[18 quality] no console errors at 1280px on #e-demo-members-trading-sim",
+   "pass": true,
+   "extra": "[\"Failed to load resource: net::ERR_FAILED\"]"
+  },
+  {
+   "name": "[18 quality] no horizontal scroll at 1280px on #admin",
+   "pass": true,
+   "extra": "scrollWidth 1280"
+  },
+  {
+   "name": "[18 quality] no console errors at 1280px on #admin",
+   "pass": true,
+   "extra": "[\"Failed to load resource: net::ERR_FAILED\"]"
+  }
+ ]
+}

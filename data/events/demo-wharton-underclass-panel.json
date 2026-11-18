@@ -1,0 +1,48 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "finance"
+  ],
+  "created": "2026-11-12T21:33:24.027Z",
+  "demoAnchor": {
+    "dayOffset": 3,
+    "deadlineHours": null,
+    "durationMin": null,
+    "time": "12:00"
+  },
+  "description": "Juniors describe how they found sophomore-year programs. Walk in any time.",
+  "eligibilityStatus": "confirmed",
+  "eligibleYears": [
+    "first-year",
+    "sophomore"
+  ],
+  "end": null,
+  "id": "demo-wharton-underclass-panel",
+  "imageRef": null,
+  "isDemo": true,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-12T21:33:24.027Z",
+  "location": "Demo Forum",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Demo Wharton Society",
+  "registration": "none",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": "Wharton"
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": null,
+  "sourceLabel": "Demo fixture (not a real announcement)",
+  "start": null,
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Underclass Recruiting Panel",
+  "updated": "2026-11-12T21:33:24.027Z"
+}

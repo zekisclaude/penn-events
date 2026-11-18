@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/wharton.waag/reel/DfnhM4coKU4/",
+  "categories": [
+    "finance"
+  ],
+  "created": "2026-11-13T03:54:18.549Z",
+  "demoAnchor": null,
+  "description": "General body meeting #5.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": null,
+  "id": "wharton-actuarial-waag-gbm-5-20261116",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "JMHH 265",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Wharton Actuarial & Accounting Group (WAAG)",
+  "registration": "unconfirmed",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": null,
+  "sourceLabel": "@wharton.waag on Instagram",
+  "start": "2026-11-16T23:30:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "WAAG GBM #5",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

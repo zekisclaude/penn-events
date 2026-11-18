@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/asam.upenn/p/DfpUBhNg_zT/",
+  "categories": [
+    "culture"
+  ],
+  "created": "2026-11-13T03:54:18.556Z",
+  "demoAnchor": null,
+  "description": "Talk by Mohan Seshadri hosted within the course 'South Asians in the US'.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": null,
+  "id": "penn-asian-asian-america-across-the-20261117",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "Caster Building room 018",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Penn Asian American Studies Program (ASAM)",
+  "registration": "required",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": "Hosted in the course 'South Asians in the US' — confirm open to non-enrolled students",
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": "Register to join in person (QR code on flyer)",
+  "rsvpUrl": null,
+  "sourceLabel": "@asam.upenn on Instagram",
+  "start": "2026-11-17T17:00:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Asian America Across the Disciplines: Mohan Seshadri",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

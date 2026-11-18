@@ -1,0 +1,50 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "consulting"
+  ],
+  "created": "2026-11-12T21:33:24.027Z",
+  "demoAnchor": {
+    "dayOffset": 2,
+    "deadlineHours": 24,
+    "durationMin": 90,
+    "time": "18:30"
+  },
+  "description": "Informal networking with alumni.",
+  "eligibilityStatus": "confirmed",
+  "eligibleYears": [
+    "first-year",
+    "sophomore",
+    "junior",
+    "senior"
+  ],
+  "end": null,
+  "id": "demo-canceled-mixer",
+  "imageRef": null,
+  "isDemo": true,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-12T21:33:24.027Z",
+  "location": "Demo Lounge",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Demo Consulting Group",
+  "registration": "required",
+  "registrationStatus": "open",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": "https://example.com/penn-events-demo-rsvp",
+  "sourceLabel": "Demo fixture (not a real announcement)",
+  "start": null,
+  "status": "canceled",
+  "statusNote": "The organizer canceled because of a scheduling conflict.",
+  "timezone": "America/New_York",
+  "title": "Consulting Mixer",
+  "updated": "2026-11-12T21:33:24.027Z"
+}

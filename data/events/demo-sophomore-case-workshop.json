@@ -1,0 +1,47 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "consulting"
+  ],
+  "created": "2026-11-12T21:33:24.027Z",
+  "demoAnchor": {
+    "dayOffset": 2,
+    "deadlineHours": 30,
+    "durationMin": 120,
+    "time": "13:00"
+  },
+  "description": "A live case walkthrough followed by paired practice. Seats are limited.",
+  "eligibilityStatus": "confirmed",
+  "eligibleYears": [
+    "sophomore"
+  ],
+  "end": null,
+  "id": "demo-sophomore-case-workshop",
+  "imageRef": null,
+  "isDemo": true,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-12T21:33:24.027Z",
+  "location": "Demo Hall 245",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Demo Consulting Group",
+  "registration": "required",
+  "registrationStatus": "open",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": "https://example.com/penn-events-demo-rsvp",
+  "sourceLabel": "Demo fixture (not a real announcement)",
+  "start": null,
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Sophomore Case Interview Workshop",
+  "updated": "2026-11-12T21:33:24.027Z"
+}

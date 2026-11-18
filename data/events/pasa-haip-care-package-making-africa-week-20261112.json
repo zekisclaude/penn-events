@@ -1,0 +1,41 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "culture",
+    "other"
+  ],
+  "created": "2026-11-13T03:54:11.294Z",
+  "demoAnchor": null,
+  "description": "Community-service care package making.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": null,
+  "id": "pasa-haip-care-package-making-africa-week-20261112",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "Huntsman G55",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "PASA & HAIP",
+  "registration": "unconfirmed",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": null,
+  "sourceLabel": "@pasa_penn on Instagram",
+  "start": "2026-11-13T00:30:00.000Z",
+  "status": "postponed",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Care Package Making (Africa Week)",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

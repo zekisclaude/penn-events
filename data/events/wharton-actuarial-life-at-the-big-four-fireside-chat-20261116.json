@@ -1,0 +1,40 @@
+{
+  "announcementUrl": "https://www.instagram.com/wharton.waag/p/DfnhrOBITAZ/",
+  "categories": [
+    "finance"
+  ],
+  "created": "2026-11-13T03:54:18.545Z",
+  "demoAnchor": null,
+  "description": "In-person fireside chat with an EY Senior Manager about Big Four careers and recruiting advice. Free pizza.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": "2026-11-17T00:30:00.000Z",
+  "id": "wharton-actuarial-life-at-the-big-four-fireside-chat-20261116",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "JMHH 265",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Wharton Actuarial & Accounting Group (WAAG)",
+  "registration": "unconfirmed",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": null,
+  "sourceLabel": "@wharton.waag on Instagram",
+  "start": "2026-11-16T23:30:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Life at the Big Four: Fireside Chat with Sterling Long (EY)",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

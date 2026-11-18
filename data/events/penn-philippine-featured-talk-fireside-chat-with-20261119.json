@@ -1,0 +1,40 @@
+{
+  "announcementUrl": null,
+  "categories": [
+    "culture"
+  ],
+  "created": "2026-11-13T03:54:18.596Z",
+  "demoAnchor": null,
+  "description": "The Balikbayan Project and the Queer Kapamilya: How Queer Filipinx Youth Imagine Themselves Into the Future.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": "2026-11-19T23:45:00.000Z",
+  "id": "penn-philippine-featured-talk-fireside-chat-with-20261119",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": "WILL 202, Williams Hall, 255 S 36th Street",
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Penn Philippine Association & Beginning Filipino I (Penn Language Center)",
+  "registration": "required",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": null,
+  "rsvpUrl": "https://TINYURL.COM/DR-ANDRE-ZARATE-TALK",
+  "sourceLabel": "@pennphilippineassociation on Instagram",
+  "start": "2026-11-19T22:15:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Featured Talk & Fireside Chat with Dr. Andre Zarate",
+  "updated": "2026-11-14T18:53:28.988Z"
+}

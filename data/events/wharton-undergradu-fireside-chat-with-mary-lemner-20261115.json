@@ -1,0 +1,41 @@
+{
+  "announcementUrl": "https://www.instagram.com/wuecupenn/p/DfDpfdgJmqs/",
+  "categories": [
+    "finance",
+    "other"
+  ],
+  "created": "2026-11-13T03:54:11.327Z",
+  "demoAnchor": null,
+  "description": "Fireside chat with author, TED speaker, entrepreneur, and former VC Mary Lemner.",
+  "eligibilityStatus": "unconfirmed",
+  "eligibleYears": [],
+  "end": null,
+  "id": "wharton-undergradu-fireside-chat-with-mary-lemner-20261115",
+  "imageRef": null,
+  "isDemo": false,
+  "jobEligibility": null,
+  "lastVerified": "2026-11-14T18:53:28.988Z",
+  "location": null,
+  "online": false,
+  "onlineUrl": null,
+  "organizer": "Wharton Undergraduate Entrepreneurship Club (WUEC)",
+  "registration": "unconfirmed",
+  "registrationStatus": "unknown",
+  "restrictions": {
+    "application": false,
+    "invitationOnly": false,
+    "membership": null,
+    "other": null,
+    "school": null
+  },
+  "rsvpDeadline": null,
+  "rsvpInstructions": "RSVP now! Link in bio",
+  "rsvpUrl": null,
+  "sourceLabel": "@wuecupenn on Instagram",
+  "start": "2026-11-15T21:00:00.000Z",
+  "status": "scheduled",
+  "statusNote": null,
+  "timezone": "America/New_York",
+  "title": "Fireside Chat with Mary Lemner",
+  "updated": "2026-11-14T18:53:28.988Z"
+}
