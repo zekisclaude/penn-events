@@ -42,9 +42,9 @@ export async function writeDoc(c, id, data, { mode = 'set', ifVersion = null, fo
     const body = JSON.stringify({ data: next, version, updatedAt: new Date().toISOString() });
     if (useBlob) {
       try {
-        await put(key(c, id), body, { access: 'private', allowOverwrite: true, contentType: 'application/json', addRandomSuffix: false, ...(cur ? { ifMatch: cur.etag } : {}) });
+        await put(key(c, id), body, { access: 'private', allowOverwrite: true, contentType: 'application/json', addRandomSuffix: false });
       } catch (e) {
-        if (e?.name === 'BlobPreconditionFailedError') continue; // someone else wrote first; re-read and retry
+        if (/precondition/i.test(String(e?.message))) continue; // someone else wrote first; re-read and retry
         throw e;
       }
     } else {
