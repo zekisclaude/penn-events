@@ -316,7 +316,7 @@ function PE_WeekGrid({ list, days, now, todayKey, onPick }) {
                   type: "button",
                   "data-testid": "block",
                   className: "gc-block" + (it.noEnd ? " gc-noend" : "") + (h < 44 ? " gc-short" : h < 80 ? " gc-mid" : ""),
-                  style: { top, height: h, left: `calc(${it.lane * w}% + 1px)`, width: `calc(${w}% - 3px)`, background: PE_color(ev) },
+                  style: { top, height: h, left: `calc(${it.lane * w}% + 1px)`, width: `calc(${w}% - 3px)`, "--c": PE_color(ev) },
                   "aria-label": label,
                   title: label,
                   onClick: (e) => onPick(ev, e.currentTarget),

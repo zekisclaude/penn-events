@@ -528,7 +528,7 @@ function PE_WeekGrid({ list, days, now, todayKey, onPick }) {
                   type: "button",
                   "data-testid": "block",
                   className: "gc-block" + (it.noEnd ? " gc-noend" : "") + (h < 44 ? " gc-short" : h < 80 ? " gc-mid" : ""),
-                  style: { top, height: h, left: `calc(${it.lane * w}% + 1px)`, width: `calc(${w}% - 3px)`, background: PE_color(ev) },
+                  style: { top, height: h, left: `calc(${it.lane * w}% + 1px)`, width: `calc(${w}% - 3px)`, "--c": PE_color(ev) },
                   "aria-label": label,
                   title: label,
                   onClick: (e) => onPick(ev, e.currentTarget),
@@ -1064,6 +1064,26 @@ header.bg-navy nav a.bg-white\/15{background:var(--gc-sel)!important;color:var(-
 .gc-mm-today .gc-mm-num,.gc-mm-today:hover .gc-mm-num{background:#0B57D0!important;color:#fff}
 .gc-mm-day:hover:not(:disabled) .gc-mm-num{background:var(--gc-hover)}
 .gc-mm-dot{background:#0B57D0}
+
+/* Calmer pass: tonal event blocks, quiet placeholders. Color marks the category; text stays dark. */
+.gc-block{background:color-mix(in srgb,var(--c) 17%,#fff);color:#1F1F1F;box-shadow:none;border:1px solid color-mix(in srgb,var(--c) 38%,#fff)}
+.gc-block:hover{background:color-mix(in srgb,var(--c) 28%,#fff);box-shadow:none;border-color:var(--c)}
+.gc-block-title{font-weight:500}
+.gc-block-time,.gc-block-meta{opacity:1;color:#444746}
+.gc-block-alert{background:#fff;border:1px solid #B3261E;color:#B3261E}
+.gc-noend{background-image:none!important;border-bottom:2px dashed color-mix(in srgb,var(--c) 70%,#fff)}
+.gc-app .text-warn,.gc-pop .text-warn{color:#444746!important}
+.gc-app [data-testid=eligibility],.gc-pop [data-testid=eligibility]{font-weight:500}
+.gc-app [data-testid=eligibility] svg,.gc-pop [data-testid=eligibility] svg{display:none}
+.gc-app .bg-warn\/15,.gc-pop .bg-warn\/15{background:#F1F3F4!important;color:#444746!important}
+.gc-app .text-ok,.gc-pop .text-ok{color:#0F6B2F}
+.gc-cal-box{width:16px;height:16px}
+.gc-row-body{gap:3px}
+@media (max-width:959px){
+  .gc-cals{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;scroll-padding-inline:16px}
+  .gc-cals::-webkit-scrollbar{display:none}
+  .gc-cal{flex:none}
+}
 </style>
 </head>
   <body>
