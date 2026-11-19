@@ -7,7 +7,7 @@ export const URLBASE = process.env.URLBASE || ('file://' + SITE);
 export function seed() {
   const out = {};
   for (const c of ['events', 'review', 'sources', 'ingest', 'metrics']) {
-    out[c] = {}; const dir = path.join(ROOT, 'data', c);
+    out[c] = {}; const dir = path.join(ROOT, 'tests', 'fixtures', c);
     if (!fs.existsSync(dir)) continue;
     for (const f of fs.readdirSync(dir)) out[c][f.replace(/\.json$/, '')] = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
   }

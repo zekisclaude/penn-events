@@ -1,15 +1,1 @@
-{
-  "accessStatus": "Not subscribed yet (dedicated inbox not set up)",
-  "categories": [
-    "tech"
-  ],
-  "collectionMethod": "Newsletter email to the dedicated inbox, plus Instagram via the dedicated account",
-  "id": "wics",
-  "instagram": "@pennwics",
-  "lastSuccessfulCheck": null,
-  "name": "Women in Computer Science",
-  "newsletterUrl": "https://herokuapp.us9.list-manage.com/subscribe?u=c0a42f3709599ee7044d1c477&id=10bca8cdbe",
-  "notes": "",
-  "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.",
-  "website": "https://wics.cis.upenn.edu/"
-}
+{"accessStatus": "Not subscribed yet (dedicated inbox not set up)", "categories": ["tech"], "collectionMethod": "Newsletter email to the dedicated inbox, plus Instagram via the dedicated account", "id": "wics", "instagram": "@pennwics", "lastSuccessfulCheck": null, "name": "Women in Computer Science", "newsletterUrl": "https://herokuapp.us9.list-manage.com/subscribe?u=c0a42f3709599ee7044d1c477&id=10bca8cdbe", "notes": "", "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.", "website": "https://wics.cis.upenn.edu/"}

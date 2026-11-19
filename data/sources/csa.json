@@ -1,15 +1,1 @@
-{
-  "accessStatus": "Not subscribed yet (dedicated inbox not set up)",
-  "categories": [
-    "culture"
-  ],
-  "collectionMethod": "Newsletter email to the dedicated inbox, plus Instagram via the dedicated account",
-  "id": "csa",
-  "instagram": "@upenncsa",
-  "lastSuccessfulCheck": null,
-  "name": "Chinese Students' Association",
-  "newsletterUrl": "https://us6.list-manage.com/subscribe?u=26b512bece20ef31262dbd506&id=78ed5036f7",
-  "notes": "Also publishes a Google Calendar: https://tinyurl.com/csagcal",
-  "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.",
-  "website": "https://upenncsa.com"
-}
+{"accessStatus": "Not subscribed yet (dedicated inbox not set up)", "categories": ["culture"], "collectionMethod": "Newsletter email to the dedicated inbox, plus Instagram via the dedicated account", "id": "csa", "instagram": "@upenncsa", "lastSuccessfulCheck": null, "name": "Chinese Students' Association", "newsletterUrl": "https://us6.list-manage.com/subscribe?u=26b512bece20ef31262dbd506&id=78ed5036f7", "notes": "Also publishes a Google Calendar: https://tinyurl.com/csagcal", "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.", "website": "https://upenncsa.com"}

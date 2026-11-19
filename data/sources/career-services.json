@@ -1,18 +1,1 @@
-{
-  "accessStatus": "Public website; Handshake needs a PennKey login",
-  "categories": [
-    "finance",
-    "consulting",
-    "tech",
-    "other"
-  ],
-  "collectionMethod": "Official calendar: Handshake Events tab and the Career Services events page; CareerMail newsletters set in Handshake career interests",
-  "id": "career-services",
-  "instagram": null,
-  "lastSuccessfulCheck": null,
-  "name": "Penn Career Services",
-  "newsletterUrl": null,
-  "notes": "\"Penn Only\" employer info sessions are labeled in Handshake. Handshake requires the owner's login, so checks are operator-assisted.",
-  "verification": "careerservices.upenn.edu pages found by web search, Nov 12 2026",
-  "website": "https://careerservices.upenn.edu"
-}
+{"accessStatus": "Public website; Handshake needs a PennKey login", "categories": ["finance", "consulting", "tech", "other"], "collectionMethod": "Official calendar: Handshake Events tab and the Career Services events page; CareerMail newsletters set in Handshake career interests", "id": "career-services", "instagram": null, "lastSuccessfulCheck": null, "name": "Penn Career Services", "newsletterUrl": null, "notes": "\"Penn Only\" employer info sessions are labeled in Handshake. Handshake requires the owner's login, so checks are operator-assisted.", "verification": "careerservices.upenn.edu pages found by web search, Nov 12 2026", "website": "https://careerservices.upenn.edu"}

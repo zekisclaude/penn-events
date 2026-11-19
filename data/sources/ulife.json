@@ -1,16 +1,1 @@
-{
-  "accessStatus": "Public",
-  "categories": [
-    "culture",
-    "other"
-  ],
-  "collectionMethod": "Official calendar, filter by host",
-  "id": "ulife",
-  "instagram": null,
-  "lastSuccessfulCheck": null,
-  "name": "University Life calendar",
-  "newsletterUrl": null,
-  "notes": "Host pages exist for Makuu and PAACH.",
-  "verification": "Found by web search, Nov 12 2026",
-  "website": "https://ulife.vpul.upenn.edu/calendar"
-}
+{"accessStatus": "Public", "categories": ["culture", "other"], "collectionMethod": "Official calendar, filter by host", "id": "ulife", "instagram": null, "lastSuccessfulCheck": null, "name": "University Life calendar", "newsletterUrl": null, "notes": "Host pages exist for Makuu and PAACH.", "verification": "Found by web search, Nov 12 2026", "website": "https://ulife.vpul.upenn.edu/calendar"}

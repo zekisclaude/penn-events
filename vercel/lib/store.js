@@ -32,13 +32,13 @@ export async function getDoc(c, id) {
 }
 
 // Writes with optimistic concurrency. mode "set" replaces, "update" merges top-level fields.
-export async function writeDoc(c, id, data, { mode = 'set', ifVersion = null } = {}) {
+export async function writeDoc(c, id, data, { mode = 'set', ifVersion = null, forceVersion = null } = {}) {
   for (let attempt = 0; attempt < 4; attempt++) {
     const cur = await getDoc(c, id);
     if (mode === 'update' && !cur) return { error: 'not_found' };
     if (ifVersion != null && (!cur || cur.version !== ifVersion)) return { error: 'conflict', version: cur?.version ?? null };
     const next = mode === 'update' ? { ...cur.data, ...data } : data;
-    const version = (cur?.version ?? 0) + 1;
+    const version = forceVersion ?? ((cur?.version ?? 0) + 1);
     const body = JSON.stringify({ data: next, version, updatedAt: new Date().toISOString() });
     if (useBlob) {
       try {
@@ -78,31 +78,46 @@ export async function listDocs(c, { limit = 1000 } = {}) {
   return out.slice(0, limit);
 }
 
-// First run: fill an empty store from the bundled seed (create-if-absent, so it can never overwrite later edits).
+// Seed and migrations. seed/manifest.json {version, delete:[[collection,id],...]} says what to remove; every file under seed/
+// is created if absent, or refreshed if nobody has edited it since it was seeded (seeded docs are always stored at version 1,
+// so any admin edit moves a doc past version 1 and protects it from later seed refreshes).
 let seeding = null;
+const MARKER = 'db/_meta/seeded.json';
+async function readMarker() {
+  if (useBlob) {
+    const r = await get(MARKER, { access: 'private', useCache: false }).catch(() => null);
+    if (!r || r.statusCode !== 200) return 0;
+    try { return JSON.parse(await readStream(r.stream)).data?.version ?? 1; } catch { return 1; }
+  }
+  try { return JSON.parse(await fs.readFile(path.join(LOCAL, '_meta', 'seeded.json'), 'utf8')).data?.version ?? 1; } catch { return 0; }
+}
+async function writeMarker(version, docs) {
+  const body = JSON.stringify({ data: { at: new Date().toISOString(), version, docs }, version: 1 });
+  if (useBlob) await put(MARKER, body, { access: 'private', allowOverwrite: true, contentType: 'application/json', addRandomSuffix: false });
+  else { await fs.mkdir(path.join(LOCAL, '_meta'), { recursive: true }); await fs.writeFile(path.join(LOCAL, '_meta', 'seeded.json'), body); }
+}
 export function ensureSeeded() {
   if (!seeding) seeding = (async () => {
-    const marker = 'db/_meta/seeded.json';
-    const done = useBlob
-      ? await get(marker, { access: 'private', useCache: false }).then((r) => !!r && r.statusCode === 200).catch(() => false)
-      : await fs.stat(path.join(LOCAL, '_meta', 'seeded.json')).then(() => true).catch(() => false);
-    if (done) return;
-    let n = 0;
+    let manifest = { version: 1, delete: [] };
+    try { manifest = JSON.parse(await fs.readFile(path.join(SEED_DIR, 'manifest.json'), 'utf8')); } catch {}
+    const have = await readMarker();
+    if (have >= manifest.version) return;
+    for (const [c, id] of manifest.delete || []) { if (COLLECTIONS.includes(c) && validId(id)) await deleteDoc(c, id); }
     const jobs = [];
     for (const c of COLLECTIONS.filter((x) => x !== 'metrics')) {
       let names = []; try { names = await fs.readdir(path.join(SEED_DIR, c)); } catch { continue; }
       for (const f of names.filter((x) => x.endsWith('.json'))) jobs.push([c, f.slice(0, -5), path.join(SEED_DIR, c, f)]);
     }
+    let n = 0;
     for (let i = 0; i < jobs.length; i += 12) {
       await Promise.all(jobs.slice(i, i + 12).map(async ([c, id, file]) => {
-        if (await getDoc(c, id)) return;
+        const cur = await getDoc(c, id);
+        if (cur && cur.version > 1) return; // edited by an admin since it was seeded: leave it alone
         const raw = JSON.parse(await fs.readFile(file, 'utf8')); const data = raw.data && raw.version != null ? raw.data : raw;
-        await writeDoc(c, id, data); n++;
+        await writeDoc(c, id, data, { forceVersion: 1 }); n++;
       }));
     }
-    const body = JSON.stringify({ data: { at: new Date().toISOString(), docs: n }, version: 1 });
-    if (useBlob) await put(marker, body, { access: 'private', allowOverwrite: true, contentType: 'application/json', addRandomSuffix: false });
-    else { await fs.mkdir(path.join(LOCAL, '_meta'), { recursive: true }); await fs.writeFile(path.join(LOCAL, '_meta', 'seeded.json'), body); }
+    await writeMarker(manifest.version, n);
   })().catch((e) => { seeding = null; throw e; });
   return seeding;
 }

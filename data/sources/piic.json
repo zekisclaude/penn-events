@@ -1,15 +1,1 @@
-{
-  "accessStatus": "Not subscribed yet (dedicated inbox not set up)",
-  "categories": [
-    "consulting"
-  ],
-  "collectionMethod": "Instagram via the dedicated account; website check each recruiting season",
-  "id": "piic",
-  "instagram": "@piic.upenn",
-  "lastSuccessfulCheck": null,
-  "name": "Penn International Impact Consulting",
-  "newsletterUrl": null,
-  "notes": "No listserv listed. Recruiting page: https://penniic.org/fall-recruiting",
-  "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.",
-  "website": "https://penniic.org/"
-}
+{"accessStatus": "Not subscribed yet (dedicated inbox not set up)", "categories": ["consulting"], "collectionMethod": "Instagram via the dedicated account; website check each recruiting season", "id": "piic", "instagram": "@piic.upenn", "lastSuccessfulCheck": null, "name": "Penn International Impact Consulting", "newsletterUrl": null, "notes": "No listserv listed. Recruiting page: https://penniic.org/fall-recruiting", "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.", "website": "https://penniic.org/"}

@@ -1,0 +1,15 @@
+{
+  "accessStatus": "Not subscribed yet (dedicated inbox not set up)",
+  "categories": [
+    "culture"
+  ],
+  "collectionMethod": "Newsletter email to the dedicated inbox, plus Instagram via the dedicated account",
+  "id": "pasa",
+  "instagram": "@pasa_penn",
+  "lastSuccessfulCheck": null,
+  "name": "African Students Association",
+  "newsletterUrl": "https://docs.google.com/forms/d/e/1FAIpQLSebrPJ4_8P_C7Gto1uf-WcFrgv3qhX-kpfaO-pbuOB2NATf_g/viewform?usp=sf_link",
+  "notes": "No website listed. Listserv sign-up is a Google Form.",
+  "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.",
+  "website": null
+}

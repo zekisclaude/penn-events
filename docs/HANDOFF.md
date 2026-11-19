@@ -96,3 +96,11 @@ Not enabled. No scheduled task exists. A suggested cadence, pending your approva
 - AI extraction: set `ANTHROPIC_API_KEY` (and optionally `EXTRACT_MODEL`) in Vercel to turn on the paste/flyer extraction buttons. Without it, JSON import and chat-assisted import still work.
 - Redeploy: `python3 tools/vercel-deploy.py`. Local test: `node tests/vercel-e2e.mjs` (36 checks against the real handlers and a local file store).
 - Not in git: `vercel/seed/` and `data/live-export/` hold drafts and source excerpts.
+
+## Update Nov 18: categories, placeholders, demos removed
+- Twelve interest categories: Finance, Consulting, Tech, Entrepreneurship, Healthcare, Career, Academic, Culture, Social, Arts, Service, Other (colors in `tools/gcal-finder.js`, labels in `tools/apply-gcal.py`).
+- Events with no announced date are published and listed under **Date to be announced** (shown below the calendar in both views, filters apply). Unknown location, eligibility and registration use the plain placeholder wording already on the cards ("Location to be announced", "Eligibility not confirmed", "Registration details unconfirmed"). Dates known without a time are written into the description.
+- Possibly-private Instagram posts are published with the note "May be limited to the organization's members. Check with the organizer."
+- Demo records are gone from the database, the seed and the repo's `data/`. Test-only fixtures live in `tests/fixtures/` and are never deployed.
+- `python3 -I tools/build-content.py data/live-export vercel/seed` rebuilds the seed (re-categorize, publish with placeholders, reject past drafts). The live store applies `vercel/seed/manifest.json` on the next request; records an admin has edited are never overwritten.
+- Build order: `tools/apply-gcal.py` then `tools/build-vercel.py` then `python3 tools/vercel-deploy.py`.

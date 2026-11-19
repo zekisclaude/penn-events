@@ -1,16 +1,1 @@
-{
-  "accessStatus": "Not subscribed yet (dedicated inbox not set up)",
-  "categories": [
-    "finance",
-    "tech"
-  ],
-  "collectionMethod": "Newsletter email to the dedicated inbox, plus Instagram via the dedicated account",
-  "id": "wuec",
-  "instagram": "@wuecupenn",
-  "lastSuccessfulCheck": null,
-  "name": "Wharton Undergraduate Entrepreneurship Club",
-  "newsletterUrl": "https://groups.wharton.upenn.edu/WUEC/club_signup",
-  "notes": "Listserv via Wharton CampusGroups sign-up (may require PennKey).",
-  "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.",
-  "website": "https://whartonentrepreneurship.org/"
-}
+{"accessStatus": "Not subscribed yet (dedicated inbox not set up)", "categories": ["finance", "tech"], "collectionMethod": "Newsletter email to the dedicated inbox, plus Instagram via the dedicated account", "id": "wuec", "instagram": "@wuecupenn", "lastSuccessfulCheck": null, "name": "Wharton Undergraduate Entrepreneurship Club", "newsletterUrl": "https://groups.wharton.upenn.edu/WUEC/club_signup", "notes": "Listserv via Wharton CampusGroups sign-up (may require PennKey).", "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.", "website": "https://whartonentrepreneurship.org/"}

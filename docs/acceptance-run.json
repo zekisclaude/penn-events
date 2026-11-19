@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T18:58:49.137Z",
+ "at": "2026-11-19T00:16:31.035Z",
  "site": "/home/user/penn-events/site/index.html",
  "results": [
   {
@@ -50,7 +50,7 @@
   {
    "name": "[4 weeks/DST] Sun 11:30 PM ET still in Nov 9-15 week",
    "pass": true,
-   "extra": "Find Penn events you can actually attend\nFilters\nAll\nFirst-year\nSophomore\nFinance\nConsulting\nTech\nCulture\nOther\nSearch by title or organizer\nReset\nThis week\nNext week\nNovember 2026\nView\nWeek\nSchedule\n"
+   "extra": "Find Penn events you can actually attend\nFilters\nAll\nFirst-year\nSophomore\nFinance\nConsulting\nTech\nEntrepreneurship\nHealthcare\nCareer\nAcademic\nCulture\nSocial\nArts\nService\nOther\nSearch by title or organ"
   },
   {
    "name": "[4 weeks/DST] Mon 12:05 AM ET rolls to Nov 16-22",
@@ -380,7 +380,7 @@
   {
    "name": "[14 approve -> finder] Editor shows source evidence beside fields + extractor flag",
    "pass": true,
-   "extra": "Admin\n\nChanges save to the shared database. Only the owner and editors can read drafts or publish.\n\nReview queue (4)\nAdd announcement\nPublished (12)\nSources\nPilot activity\nAXOM Partners Info Session: 2028 Summer Analyst Program\nAXOM Partners (posted by Penn Career Services) · calendar\nDraft\n3 flags\nDemo Chess Night <img src=x onerror=\"window.__XSS=1\">\nDemo Chess Club · email\nDraft\n2 flags\nDemo Chess Night Late Session\nDemo Chess Club · email\nDraft\n2 flags\nBad Date\nX · json\nDraft\n3 blocking\n2 flags\nDemo Chess Night <img src=x onerror=\"window.__XSS=1\">\n\nDraft id demo-chess-club-demo-chess-night-img-src-x-onerror-20261117. Public URL after approval: https://claude.ai/artifact/PWmhpLc7gmLMuXNwNL82se#e-demo-chess-club-demo-chess-night-img-src-x-onerror-20261117\n\nClose\n\nExtractor flag: Year infe"
+   "extra": "Admin\n\nChanges save to the shared database. Only the owner and editors can read drafts or publish.\n\nReview queue (4)\nAdd announcement\nPublished (12)\nSources\nPilot activity\nAXOM Partners Info Session: 2028 Summer Analyst Program\nAXOM Partners (posted by Penn Career Services) · calendar\nDraft\n3 flags\nDemo Chess Night <img src=x onerror=\"window.__XSS=1\">\nDemo Chess Club · email\nDraft\n2 flags\nDemo Chess Night Late Session\nDemo Chess Club · email\nDraft\n2 flags\nBad Date\nX · json\nDraft\n2 blocking\n2 flags\nDemo Chess Night <img src=x onerror=\"window.__XSS=1\">\n\nDraft id demo-chess-club-demo-chess-night-img-src-x-onerror-20261117. Public URL after approval: https://claude.ai/artifact/PWmhpLc7gmLMuXNwNL82se#e-demo-chess-club-demo-chess-night-img-src-x-onerror-20261117\n\nClose\n\nExtractor flag: Year infe"
   },
   {
    "name": "[14 approve -> finder] Possible duplicate flagged for the other session",
@@ -400,7 +400,7 @@
   {
    "name": "[14 approve -> finder] Approve gives confirmation",
    "pass": true,
-   "extra": "ags\nBad Date\nX · json\nDraft\n3 blocking\n2 flags\n\nSelect a draft to review it.\n\nIndependent student project. Not affiliated with the University of Pennsylvania.\n\nEvent details come from organizers' announcements. Confirm with the organizer before you go.\n\nApproved. The event is now live in the finder."
+   "extra": "ags\nBad Date\nX · json\nDraft\n2 blocking\n2 flags\n\nSelect a draft to review it.\n\nIndependent student project. Not affiliated with the University of Pennsylvania.\n\nEvent details come from organizers' announcements. Confirm with the organizer before you go.\n\nApproved. The event is now live in the finder."
   },
   {
    "name": "[14 approve -> finder] After approval the same record shows in the student finder",
@@ -425,7 +425,7 @@
   {
    "name": "[15 correction keeps URL] Change history records the changed field",
    "pass": true,
-   "extra": "{\"at\":\"2026-11-14T18:58:22.324Z\",\"action\":\"Correction saved\",\"fields\":[\"location\"]}"
+   "extra": "{\"at\":\"2026-11-19T00:16:03.759Z\",\"action\":\"Correction saved\",\"fields\":[\"location\"]}"
   },
   {
    "name": "[15 correction keeps URL] Same URL shows corrected info",
@@ -570,7 +570,7 @@
   {
    "name": "[18 quality] first event card starts within the first phone screen",
    "pass": true,
-   "extra": "top 502"
+   "extra": "top 658"
   },
   {
    "name": "[18 quality] footer disclaimer present",

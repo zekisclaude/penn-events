@@ -10,13 +10,20 @@ const PE_h = E.createElement;
 const PE_FKEY = "pe.filters.v2";
 const PE_MAXWEEK = 8;
 const PE_HOURPX = 48;
-// Google Calendar event colors (all keep white text at WCAG AA)
+// Google Calendar event colors (darkened where needed so white text stays at WCAG AA)
 const PE_CAT = {
-  finance: "#0B8043",    // Basil
-  consulting: "#3F51B5", // Blueberry
-  tech: "#D50000",       // Tomato
-  culture: "#8E24AA",    // Grape
-  other: "#616161",      // Graphite
+  finance: "#0B8043",          // Basil
+  consulting: "#3F51B5",       // Blueberry
+  tech: "#D50000",             // Tomato
+  entrepreneurship: "#D84315", // Tangerine, darker
+  healthcare: "#00796B",       // Eucalyptus
+  career: "#0277BD",           // Peacock, darker
+  academic: "#5E35B1",         // Lavender, darker
+  culture: "#8E24AA",          // Grape
+  social: "#C2185B",           // Flamingo, darker
+  arts: "#795548",             // Cocoa
+  service: "#558B2F",          // Sage, darker
+  other: "#616161",            // Graphite
 };
 const PE_YEARS = { all: "All", "first-year": "First-year", sophomore: "Sophomore" };
 const PE_YEAR_PLURAL = { "first-year": "first-years", sophomore: "sophomores" };
@@ -385,6 +392,41 @@ function PE_Schedule({ groups, now, todayKey, onOpen }) {
   );
 }
 
+/* ---------- Events with no announced date ---------- */
+function PE_Undated({ list, now, onOpen }) {
+  if (!list.length) return null;
+  return PE_h(
+    "section",
+    { className: "gc-tbd", "aria-labelledby": "gc-tbd-h" },
+    PE_h("h3", { id: "gc-tbd-h", className: "gc-tbd-h" }, `Date to be announced (${list.length})`),
+    PE_h("p", { className: "gc-tbd-note" }, "The organizer has not announced a date or time yet. Check the event page or the organizer for updates."),
+    PE_h(
+      "ul",
+      { className: "gc-sched-list gc-tbd-list" },
+      list.map((ev) =>
+        PE_h(
+          "li",
+          { key: ev.id },
+          PE_h(
+            "a",
+            { href: "#e-" + ev.id, "data-testid": "card-tbd", className: "gc-row", onClick: (e) => { e.preventDefault(); onOpen(ev.id); } },
+            PE_h("span", { className: "gc-row-title" }, ev.title),
+            PE_h("span", { className: "gc-row-dot", style: { background: PE_color(ev) }, "aria-hidden": true }),
+            PE_h("span", { className: "gc-row-time" }, "Date to be announced"),
+            PE_h("div", { className: "gc-row-body" },
+              PE_h(Ws, { e: ev, compact: !0 }),
+              PE_h("p", { className: "gc-row-org" }, ev.organizer),
+              PE_h("p", { className: "gc-row-loc" }, PE_h(PE_Icon, { name: "pin", size: 14 }), ev.online ? "Online" : ev.location || "Location to be announced"),
+              PE_h(Gd, { e: ev, now }),
+              PE_h(qd, { e: ev })
+            )
+          )
+        )
+      )
+    )
+  );
+}
+
 /* ---------- Finder ---------- */
 function PE_Finder({ events: allEvents, now, loadState, note, onOpen }) {
   const [f, setF] = E.useState(PE_loadFilters);
@@ -395,6 +437,15 @@ function PE_Finder({ events: allEvents, now, loadState, note, onOpen }) {
   }, [f]);
   const list = E.useMemo(() => Ih(allEvents, f, now), [allEvents, f, now]);
   const groups = E.useMemo(() => Mh(list, now), [list, now]);
+  const tbd = E.useMemo(() => {
+    const q = f.q.trim().toLowerCase();
+    return allEvents
+      .filter((ev) => ev.status === "scheduled" && !je(ev, now).start)
+      .filter((ev) => Oh(ev, f.year))
+      .filter((ev) => f.interests.length === 0 || ev.categories.some((c) => f.interests.includes(c)))
+      .filter((ev) => !q || ev.title.toLowerCase().includes(q) || ev.organizer.toLowerCase().includes(q))
+      .sort((x, y) => x.title.localeCompare(y.title));
+  }, [allEvents, f.year, f.interests, f.q, now]);
   const range = Bd(now, f.week);
   const days = [0, 1, 2, 3, 4, 5, 6].map((i) => PE_dayInfo(Us(range.start, i)));
   const todayKey = Ae(now);
@@ -436,7 +487,7 @@ function PE_Finder({ events: allEvents, now, loadState, note, onOpen }) {
     );
   const rangeText = `${PE_fmtMonthDay.format(PE_keyUTC(range.start))} to ${PE_fmtMonthDay.format(PE_keyUTC(range.end))}`;
   const empty =
-    loadState !== "loading" && list.length === 0
+    loadState !== "loading" && list.length === 0 && tbd.length === 0
       ? PE_h(
           "div",
           { className: "gc-empty", "data-testid": "empty", role: "status" },
@@ -532,6 +583,7 @@ function PE_Finder({ events: allEvents, now, loadState, note, onOpen }) {
         : list.length
           ? PE_h(PE_Schedule, { groups, now, todayKey, onOpen })
           : null,
+      PE_h(PE_Undated, { list: tbd, now, onOpen }),
       pop ? PE_h(PE_Popover, { ev: pop.ev, now, anchor: pop.el, onClose: closePop, onOpen }) : null
     )
   );

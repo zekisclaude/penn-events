@@ -1,0 +1,37 @@
+{
+  "changedFields": [],
+  "created": "2026-11-12T21:33:24.027Z",
+  "dedupeKey": "demo-investing-club|anchored|demo-members-trading-sim",
+  "draft": {
+    "id": "demo-members-trading-sim",
+    "isDemo": true,
+    "organizer": "Demo Investing Club",
+    "title": "Trading Simulation Night"
+  },
+  "duplicateOf": null,
+  "evidence": {},
+  "flags": [],
+  "history": [
+    {
+      "action": "Seeded as demo fixture",
+      "at": "2026-11-12T21:33:24.027Z"
+    }
+  ],
+  "id": "demo-members-trading-sim",
+  "isDemo": true,
+  "notes": "Demo fixture. Remove before public launch.",
+  "reviewStatus": "approved",
+  "sources": [
+    {
+      "capturedAt": "2026-11-12T21:33:24.027Z",
+      "contentHash": null,
+      "excerpt": "Fictional record. Remove before public launch.",
+      "isPublic": false,
+      "kind": "chat",
+      "label": "Demo fixture created for the private preview",
+      "messageId": null,
+      "url": null
+    }
+  ],
+  "updated": "2026-11-12T21:33:24.027Z"
+}

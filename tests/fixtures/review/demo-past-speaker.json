@@ -1,0 +1,37 @@
+{
+  "changedFields": [],
+  "created": "2026-11-12T21:33:24.027Z",
+  "dedupeKey": "demo-finance-society|anchored|demo-past-speaker",
+  "draft": {
+    "id": "demo-past-speaker",
+    "isDemo": true,
+    "organizer": "Demo Finance Society",
+    "title": "Alumni Speaker: First Year on the Desk"
+  },
+  "duplicateOf": null,
+  "evidence": {},
+  "flags": [],
+  "history": [
+    {
+      "action": "Seeded as demo fixture",
+      "at": "2026-11-12T21:33:24.027Z"
+    }
+  ],
+  "id": "demo-past-speaker",
+  "isDemo": true,
+  "notes": "Demo fixture. Remove before public launch.",
+  "reviewStatus": "approved",
+  "sources": [
+    {
+      "capturedAt": "2026-11-12T21:33:24.027Z",
+      "contentHash": null,
+      "excerpt": "Fictional record. Remove before public launch.",
+      "isPublic": false,
+      "kind": "chat",
+      "label": "Demo fixture created for the private preview",
+      "messageId": null,
+      "url": null
+    }
+  ],
+  "updated": "2026-11-12T21:33:24.027Z"
+}

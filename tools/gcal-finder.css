@@ -141,3 +141,9 @@
 .gc-mm-day:disabled{opacity:.4;cursor:default}
 .gc-mm-dot{position:absolute;bottom:1px;left:50%;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:rgb(var(--red))}
 @media (prefers-reduced-motion:reduce){.gc-block,.gc-row{transition:none}}
+
+.gc-tbd{margin-top:12px;padding:8px 8px 4px;border-radius:16px;background:#fff}
+.gc-tbd-h{margin:8px 12px 0;font-size:14px;font-weight:500;color:#1F1F1F;font-family:"Google Sans",Roboto,Arial,sans-serif}
+.gc-tbd-note{margin:2px 12px 6px;font-size:13px;color:#444746}
+.gc-tbd .gc-row{grid-template-columns:10px minmax(0,1fr);grid-template-areas:"dot title" ". time" ". body"}
+@media (min-width:768px){.gc-tbd .gc-row{grid-template-columns:10px 150px minmax(0,1fr);grid-template-areas:"dot time title" ". . body"}}

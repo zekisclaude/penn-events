@@ -1,15 +1,1 @@
-{
-  "accessStatus": "Not subscribed yet (dedicated inbox not set up)",
-  "categories": [
-    "consulting"
-  ],
-  "collectionMethod": "Newsletter email to the dedicated inbox, plus Instagram via the dedicated account",
-  "id": "wucc",
-  "instagram": "@wuccpenn",
-  "lastSuccessfulCheck": null,
-  "name": "Wharton Undergraduate Consulting Club",
-  "newsletterUrl": "https://whartonundergraduateconsultingclub.us12.list-manage.com/subscribe?u=160450e17655f411a78d5ed9c&id=8c139dc619",
-  "notes": "Mailchimp listserv link from Penn Clubs; not opened yet.",
-  "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.",
-  "website": "https://wuccpenn.org"
-}
+{"accessStatus": "Not subscribed yet (dedicated inbox not set up)", "categories": ["consulting"], "collectionMethod": "Newsletter email to the dedicated inbox, plus Instagram via the dedicated account", "id": "wucc", "instagram": "@wuccpenn", "lastSuccessfulCheck": null, "name": "Wharton Undergraduate Consulting Club", "newsletterUrl": "https://whartonundergraduateconsultingclub.us12.list-manage.com/subscribe?u=160450e17655f411a78d5ed9c&id=8c139dc619", "notes": "Mailchimp listserv link from Penn Clubs; not opened yet.", "verification": "Listed on Penn Clubs (pennclubs.com API), checked Nov 4 2026. Instagram account confirmed to exist in the browser on Nov 4 2026.", "website": "https://wuccpenn.org"}

@@ -1,0 +1,81 @@
+{
+  "changedFields": [],
+  "created": "2026-11-12T21:42:31.174Z",
+  "dedupeKey": "axom-partners-posted-by-penn|2026-11-19|axom-partners-info-session-2028-summer",
+  "draft": {
+    "announcementUrl": "https://careerservices.upenn.edu/events/2026/11/19/axom-partners-info-session-2028-summer-analyst-program/",
+    "categories": [
+      "finance"
+    ],
+    "created": "2026-11-12T21:42:31.174Z",
+    "demoAnchor": null,
+    "description": "AXOM Partners, a bank advising technology and AI companies on M&A, describes its work and its 2028 Summer Analyst Program, then takes questions.",
+    "eligibilityStatus": "unconfirmed",
+    "eligibleYears": [],
+    "end": "2026-11-20T00:00:00.000Z",
+    "id": "axom-partners-axom-partners-info-session-2028-20261119",
+    "imageRef": null,
+    "isDemo": false,
+    "jobEligibility": "The program is the 2028 Summer Analyst Program. The page does not say which class years may apply.",
+    "lastVerified": "2026-11-12T21:42:31.174Z",
+    "location": "Steinberg-Dietrich Hall 213",
+    "online": false,
+    "onlineUrl": null,
+    "organizer": "AXOM Partners (posted by Penn Career Services)",
+    "registration": "unconfirmed",
+    "registrationStatus": "unknown",
+    "restrictions": {
+      "application": false,
+      "invitationOnly": false,
+      "membership": null,
+      "other": null,
+      "school": null
+    },
+    "rsvpDeadline": null,
+    "rsvpInstructions": "RSVP through Handshake (PennKey login).",
+    "rsvpUrl": "https://upenn.joinhandshake.com/events/2039262",
+    "sourceLabel": "Penn Career Services events calendar",
+    "start": "2026-11-19T22:30:00.000Z",
+    "status": "scheduled",
+    "statusNote": null,
+    "timezone": "America/New_York",
+    "title": "AXOM Partners Info Session: 2028 Summer Analyst Program",
+    "updated": "2026-11-12T21:42:31.174Z"
+  },
+  "duplicateOf": null,
+  "evidence": {
+    "eligibility": "Open to UPenn students interested in investment banking or a career in finance.",
+    "location": "Steinberg-Dietrich Hall, Room 213",
+    "rsvpUrl": "Click here to attend",
+    "start": "Thursday, November 19, 2026, 5:30pm to 7pm"
+  },
+  "flags": [
+    "Source says \"Open to UPenn students\" but names no class years. Decide whether that confirms first-years and sophomores before marking eligibility confirmed.",
+    "Handshake link exists, but the page does not say registration is required or give a deadline.",
+    "Do not infer who can apply to the 2028 Summer Analyst Program from the info session."
+  ],
+  "history": [
+    {
+      "action": "Draft created from chat import",
+      "at": "2026-11-12T21:42:31.174Z",
+      "note": "Penn Career Services events calendar"
+    }
+  ],
+  "id": "axom-partners-axom-partners-info-session-2028-20261119",
+  "isDemo": false,
+  "notes": "",
+  "reviewStatus": "draft",
+  "sources": [
+    {
+      "capturedAt": "2026-11-12T21:42:31.174Z",
+      "contentHash": "c93cd69f9553349de15200efe1a86e9afb0262fe",
+      "excerpt": "AXOM Partners Info Session: 2028 Summer Analyst Program. Thursday, November 19, 2026, 5:30pm to 7pm. Wharton School, Steinberg-Dietrich Hall, Room 213, 3620 Locust Walk. \"Interested in investment banking? Come meet the AXOM team and learn how we advise high-growth technology and AI companies on M&A and strategic transactions.\" \"We'll also share more about our 2028 Summer Analyst Program.\" \"Open to UPenn students interested in investment banking or a career in finance.\" Link: \"Click here to attend\" https://upenn.joinhandshake.com/events/2039262. No RSVP deadline listed.",
+      "isPublic": true,
+      "kind": "calendar",
+      "label": "Penn Career Services events calendar",
+      "messageId": null,
+      "url": "https://careerservices.upenn.edu/events/2026/11/19/axom-partners-info-session-2028-summer-analyst-program/"
+    }
+  ],
+  "updated": "2026-11-12T21:42:31.174Z"
+}

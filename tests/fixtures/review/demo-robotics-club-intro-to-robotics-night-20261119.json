@@ -1,0 +1,87 @@
+{
+  "changedFields": [],
+  "created": "2026-11-12T21:42:31.174Z",
+  "dedupeKey": "demo-robotics-club|2026-11-19|intro-to-robotics-night",
+  "draft": {
+    "announcementUrl": null,
+    "categories": [
+      "tech"
+    ],
+    "created": "2026-11-12T21:42:31.174Z",
+    "demoAnchor": null,
+    "description": "Hands-on introduction to small robot kits. Demo record for the end-to-end test.",
+    "eligibilityStatus": "confirmed",
+    "eligibleYears": [
+      "first-year",
+      "sophomore",
+      "junior",
+      "senior"
+    ],
+    "end": null,
+    "id": "demo-robotics-club-intro-to-robotics-night-20261119",
+    "imageRef": null,
+    "isDemo": true,
+    "jobEligibility": null,
+    "lastVerified": "2026-11-12T21:43:31.117Z",
+    "location": "Demo Lab C",
+    "online": false,
+    "onlineUrl": null,
+    "organizer": "Demo Robotics Club",
+    "registration": "required",
+    "registrationStatus": "open",
+    "restrictions": {
+      "application": false,
+      "invitationOnly": false,
+      "membership": null,
+      "other": null,
+      "school": null
+    },
+    "rsvpDeadline": "2026-11-19T04:59:00.000Z",
+    "rsvpInstructions": null,
+    "rsvpUrl": "https://example.com/penn-events-demo-robotics",
+    "sourceLabel": "Demo fixture (not a real announcement)",
+    "start": "2026-11-20T00:00:00.000Z",
+    "status": "scheduled",
+    "statusNote": null,
+    "timezone": "America/New_York",
+    "title": "Intro to Robotics Night",
+    "updated": "2026-11-12T21:43:31.117Z"
+  },
+  "duplicateOf": null,
+  "evidence": {
+    "eligibility": "Open to all undergrads.",
+    "rsvpDeadline": "RSVP by Wed 11/18 11:59pm",
+    "start": "Thursday 11/19 at 7pm"
+  },
+  "flags": [
+    "Year inferred from capture date"
+  ],
+  "history": [
+    {
+      "action": "Draft created from chat import",
+      "at": "2026-11-12T21:42:31.174Z",
+      "note": "Demo announcement pasted in chat for the end-to-end test"
+    },
+    {
+      "action": "Approved and published",
+      "at": "2026-11-12T21:43:31.117Z"
+    }
+  ],
+  "id": "demo-robotics-club-intro-to-robotics-night-20261119",
+  "isDemo": true,
+  "notes": "",
+  "reviewStatus": "approved",
+  "sources": [
+    {
+      "capturedAt": "2026-11-12T21:42:31.174Z",
+      "contentHash": "7f4c377b085d1cd00b81a663cc4c34f27c2b474f",
+      "excerpt": "DEMO. Demo Robotics Club: Intro to Robotics Night, Thursday 11/19 at 7pm in Demo Lab C. Open to all undergrads. RSVP by Wed 11/18 11:59pm at the demo link.",
+      "isPublic": false,
+      "kind": "chat",
+      "label": "Demo announcement pasted in chat for the end-to-end test",
+      "messageId": null,
+      "url": null
+    }
+  ],
+  "updated": "2026-11-12T21:43:31.117Z"
+}

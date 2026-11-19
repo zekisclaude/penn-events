@@ -1,15 +1,1 @@
-{
-  "accessStatus": "Public calendar; newsletter signup URL not found",
-  "categories": [
-    "culture"
-  ],
-  "collectionMethod": "University Life calendar (host page) and Makuu newsletter",
-  "id": "makuu",
-  "instagram": null,
-  "lastSuccessfulCheck": null,
-  "name": "Makuu: The Black Cultural Center",
-  "newsletterUrl": null,
-  "notes": "Site mentions a Makuu Newsletter; signup link not located yet.",
-  "verification": "Found by web search, Nov 12 2026",
-  "website": "https://makuu.universitylife.upenn.edu"
-}
+{"accessStatus": "Public calendar; newsletter signup URL not found", "categories": ["culture"], "collectionMethod": "University Life calendar (host page) and Makuu newsletter", "id": "makuu", "instagram": null, "lastSuccessfulCheck": null, "name": "Makuu: The Black Cultural Center", "newsletterUrl": null, "notes": "Site mentions a Makuu Newsletter; signup link not located yet.", "verification": "Found by web search, Nov 12 2026", "website": "https://makuu.universitylife.upenn.edu"}

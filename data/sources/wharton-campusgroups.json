@@ -1,17 +1,1 @@
-{
-  "accessStatus": "ICS feed links need to be copied from the page; not connected",
-  "categories": [
-    "finance",
-    "consulting",
-    "other"
-  ],
-  "collectionMethod": "Official calendar: public ICS feeds per club and school-wide",
-  "id": "wharton-campusgroups",
-  "instagram": null,
-  "lastSuccessfulCheck": null,
-  "name": "Wharton CampusGroups calendar (club events)",
-  "newsletterUrl": null,
-  "notes": "Wharton undergrad clubs post events here; it syncs to MyWharton hourly. Best single structured source for Wharton clubs.",
-  "verification": "groups.wharton.upenn.edu/ics_helper found by web search, Nov 12 2026",
-  "website": "https://groups.wharton.upenn.edu/ics_helper"
-}
+{"accessStatus": "ICS feed links need to be copied from the page; not connected", "categories": ["finance", "consulting", "other"], "collectionMethod": "Official calendar: public ICS feeds per club and school-wide", "id": "wharton-campusgroups", "instagram": null, "lastSuccessfulCheck": null, "name": "Wharton CampusGroups calendar (club events)", "newsletterUrl": null, "notes": "Wharton undergrad clubs post events here; it syncs to MyWharton hourly. Best single structured source for Wharton clubs.", "verification": "groups.wharton.upenn.edu/ics_helper found by web search, Nov 12 2026", "website": "https://groups.wharton.upenn.edu/ics_helper"}

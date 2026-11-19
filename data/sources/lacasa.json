@@ -1,15 +1,1 @@
-{
-  "accessStatus": "Public",
-  "categories": [
-    "culture"
-  ],
-  "collectionMethod": "Center events calendar",
-  "id": "lacasa",
-  "instagram": null,
-  "lastSuccessfulCheck": null,
-  "name": "La Casa Latina",
-  "newsletterUrl": null,
-  "notes": "",
-  "verification": "Found by web search, Nov 12 2026",
-  "website": "https://casalatina.universitylife.upenn.edu/"
-}
+{"accessStatus": "Public", "categories": ["culture"], "collectionMethod": "Center events calendar", "id": "lacasa", "instagram": null, "lastSuccessfulCheck": null, "name": "La Casa Latina", "newsletterUrl": null, "notes": "", "verification": "Found by web search, Nov 12 2026", "website": "https://casalatina.universitylife.upenn.edu/"}

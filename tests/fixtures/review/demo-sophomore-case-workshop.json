@@ -1,0 +1,37 @@
+{
+  "changedFields": [],
+  "created": "2026-11-12T21:33:24.027Z",
+  "dedupeKey": "demo-consulting-group|anchored|demo-sophomore-case-workshop",
+  "draft": {
+    "id": "demo-sophomore-case-workshop",
+    "isDemo": true,
+    "organizer": "Demo Consulting Group",
+    "title": "Sophomore Case Interview Workshop"
+  },
+  "duplicateOf": null,
+  "evidence": {},
+  "flags": [],
+  "history": [
+    {
+      "action": "Seeded as demo fixture",
+      "at": "2026-11-12T21:33:24.027Z"
+    }
+  ],
+  "id": "demo-sophomore-case-workshop",
+  "isDemo": true,
+  "notes": "Demo fixture. Remove before public launch.",
+  "reviewStatus": "approved",
+  "sources": [
+    {
+      "capturedAt": "2026-11-12T21:33:24.027Z",
+      "contentHash": null,
+      "excerpt": "Fictional record. Remove before public launch.",
+      "isPublic": false,
+      "kind": "chat",
+      "label": "Demo fixture created for the private preview",
+      "messageId": null,
+      "url": null
+    }
+  ],
+  "updated": "2026-11-12T21:33:24.027Z"
+}
