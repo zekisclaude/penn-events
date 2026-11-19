@@ -86,3 +86,13 @@ Leave unknown values null or unconfirmed and add a flag.
 ## Recurring collection
 Not enabled. No scheduled task exists. A suggested cadence, pending your approval: weekdays at
 8:40 AM and 4:40 PM ET for the inbox and calendars, plus a daily pass over Instagram stories.
+
+## Vercel deployment (Nov 19)
+- Project `penn-events` on the zekisclaude-8572 Vercel team: https://penn-events-zekisclaude-8572.vercel.app
+- Vercel Authentication is set to protect all deployments, so only signed-in members of that Vercel team can open it. Turn it off in Project Settings → Deployment Protection only when you approve the public launch.
+- Admin: open `/#admin` and sign in with the password stored as the `ADMIN_PASSWORD` environment variable (sensitive, Production and Preview). The session is a signed, HttpOnly cookie set from `SESSION_SECRET`.
+- Data: private Vercel Blob store `penn-events-data`, one JSON document per record. The first request seeds it from `vercel/seed/` (create-if-absent, so it never overwrites edits).
+- Rules enforced on the server (`vercel/api/db.js`): anyone reads `events`; anyone can create a validated metric; only admin reads or writes `review`, `sources`, `ingest`, `metrics`.
+- AI extraction: set `ANTHROPIC_API_KEY` (and optionally `EXTRACT_MODEL`) in Vercel to turn on the paste/flyer extraction buttons. Without it, JSON import and chat-assisted import still work.
+- Redeploy: `python3 tools/vercel-deploy.py`. Local test: `node tests/vercel-e2e.mjs` (36 checks against the real handlers and a local file store).
+- Not in git: `vercel/seed/` and `data/live-export/` hold drafts and source excerpts.

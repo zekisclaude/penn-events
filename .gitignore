@@ -5,3 +5,8 @@ data/review/
 data/ingest/
 data/metrics/
 data/imports/
+
+# live database export (private drafts and source excerpts)
+data/live-export/
+vercel/.localdb/
+vercel/seed/
