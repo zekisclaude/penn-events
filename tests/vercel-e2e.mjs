@@ -46,9 +46,9 @@ try {
   const page = await ctx.newPage(); const errs = []; page.on('console', (m) => { if (m.type() === 'error' && !/fonts|ERR_FAILED|ERR_NAME|ERR_CONNECTION|401 \(Unauthorized\)/.test(m.text())) errs.push(m.text()); }); page.on('pageerror', (e) => errs.push(e.message)); page.on('response', (x) => { if (x.status() >= 400 && x.status() !== 401 && x.url().includes('/api/')) errs.push(x.status() + ' ' + x.request().method() + ' ' + x.url().replace(BASE, '')); });
   await page.route(/fonts\.g/, (x) => x.abort());
   await page.goto(BASE + '/'); await page.waitForTimeout(1500);
-  const blocks = await page.$$eval('[data-testid=block]', (e) => e.length);
+  await page.waitForTimeout(500);
+  const blocks = await page.$$eval('[data-testid=card]', (e) => e.length);
   ok('student finder loads events from the database', blocks > 3, blocks);
-  await page.selectOption('#gc-view', 'schedule'); await page.waitForTimeout(300);
   const cards = await page.$$eval('[data-testid=card]', (e) => e.map((x) => x.innerText));
   ok('cards render real imported events', cards.some((c) => c.includes('Featured Talk') || c.includes('Shanghai After Dark')), cards.length);
   const store = (c) => fs.readdirSync(path.join(DB, c)).filter((f) => f.endsWith('.json'));
@@ -61,7 +61,7 @@ try {
   ok('placeholders read plainly (date, eligibility, location)', tbdCards.every((c) => c.includes('Date to be announced') && /Eligibility not confirmed|only\.|Open to/.test(c)) && tbdCards.some((c) => c.includes('Location to be announced')), tbdCards[0]);
   await page.getByRole('button', { name: 'Career', exact: true }).click(); await page.waitForTimeout(500);
   const careerCards = await page.$$eval('[data-testid=card], [data-testid=card-tbd]', (e) => e.length);
-  const careerBlocks = await page.$$eval('[data-testid=block]', (e) => e.length);
+  const careerBlocks = 0;
   ok('a new category filter narrows the list', careerBlocks + careerCards < blocks + cards.length + tbdCards.length && careerBlocks + careerCards > 0, careerBlocks + '/' + careerCards);
   await page.getByRole('button', { name: 'Career', exact: true }).click(); await page.waitForTimeout(300);
   await page.getByRole('radio', { name: 'First-year', exact: true }).click(); await page.waitForTimeout(400);

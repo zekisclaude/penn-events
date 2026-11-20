@@ -5,7 +5,7 @@ src, dst = sys.argv[1], sys.argv[2]
 root = pathlib.Path(__file__).parent
 s = open(src).read()
 js = (root / 'gcal-finder.js').read_text()
-css = (root / 'gcal-finder.css').read_text() + '\n' + (root / 'gcal-theme.css').read_text()
+css = (root / 'gcal-finder.css').read_text() + '\n' + (root / 'theme.css').read_text()
 i = s.index('function Lg('); j = s.index('function Su(', i)
 s = s[:i] + js + '\n' + s[j:]
 def rep(a, b):
@@ -15,7 +15,7 @@ def rep(a, b):
 rep('e.name==="admin"?"max-w-6xl":"max-w-3xl"', 'e.name==="event"?"max-w-3xl":"max-w-6xl"')
 rep('"mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-1"', '"mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-1"')
 rep('className:"mx-auto max-w-3xl px-4 py-4 text-[13px] text-muted"', 'className:"mx-auto max-w-6xl px-4 py-4 text-[13px] text-muted"')
-rep('family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap', 'family=Google+Sans:wght@400;500;700&family=Google+Sans+Text:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap')
+rep('family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap', 'family=Hanken+Grotesk:wght@400;500;600;700&display=swap')
 rep('pi=["finance","consulting","tech","culture","other"],Ql={finance:"Finance",consulting:"Consulting",tech:"Tech",culture:"Culture",other:"Other"}',
     'pi=["finance","consulting","tech","entrepreneurship","healthcare","career","academic","culture","social","arts","service","other"],Ql={finance:"Finance",consulting:"Consulting",tech:"Tech",entrepreneurship:"Entrepreneurship",healthcare:"Healthcare",career:"Career",academic:"Academic",culture:"Culture",social:"Social",arts:"Arts",service:"Service",other:"Other"}')
 rep('subset of ["finance","consulting","tech","culture","other"]', 'subset of ["finance","consulting","tech","entrepreneurship","healthcare","career","academic","culture","social","arts","service","other"]')

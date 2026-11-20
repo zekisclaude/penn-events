@@ -1,0 +1,159 @@
+/* Penn Events theme.
+   Plan: a feed, not a calendar. White page, navy header and heavy navy date numerals, thin dividers instead of cards,
+   Penn red reserved for urgency (deadlines, today). One typeface (Hanken Grotesk); weight and size carry the hierarchy.
+   Loaded after gcal-finder.css and overrides it. Tokens: navy #011F5B, red #990000, ink #1B1F2A, muted #565C6B, line #D9DCE3, panel #F5F6F9. */
+:root{
+  --navy: 1 31 91;
+  --red: 153 0 0;
+  --bg: 251 251 252;
+  --surface: 255 255 255;
+  --ink: 27 31 42;
+  --muted: 86 92 107;
+  --line: 217 220 227;
+  --warn: 86 92 107;
+  --ok: 27 31 42;
+  --accent: 1 31 91;
+  --pe-panel: #F5F6F9;
+  --pe-radius: 6px;
+}
+html,body{font-family:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif!important;background:#FBFBFC;color:#1B1F2A;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.font-display,.gc-title,.gc-pop-title{font-family:"Hanken Grotesk",system-ui,sans-serif!important;color:#011F5B}
+
+/* header: Penn navy band, plain wordmark */
+header.bg-navy{background:#011F5B!important;color:#fff!important}
+header.bg-navy a{color:#fff!important;border-radius:var(--pe-radius)}
+header.bg-navy a.font-display{font-size:19px!important;font-weight:700!important;letter-spacing:-.01em!important}
+header.bg-navy nav a:hover,header.bg-navy nav button:hover{background:rgba(255,255,255,.12)!important}
+header.bg-navy nav a.bg-white\/15{background:rgba(255,255,255,.16)!important}
+
+/* page heading */
+h1.font-display{font-size:30px!important;line-height:1.1!important;font-weight:700!important;letter-spacing:-.02em;color:#011F5B!important;margin:8px 0 18px!important;max-width:18ch}
+@media (min-width:768px){h1.font-display{font-size:38px!important;max-width:none}}
+
+/* controls: square-ish, flat, navy when selected */
+.gc-app :focus-visible,.gc-pop :focus-visible{outline:2px solid #011F5B;outline-offset:2px}
+.gc-seg{border:1px solid #B9BFCC;border-radius:var(--pe-radius);background:#fff;overflow:hidden;padding:0;gap:0}
+.gc-seg-btn{border-radius:0;min-height:44px;padding:0 16px;font-weight:600;font-size:14px;color:#1B1F2A}
+.gc-seg-btn+.gc-seg-btn{border-left:1px solid #B9BFCC}
+.gc-seg-btn[aria-checked=true]{background:#011F5B;color:#fff}
+.gc-seg-btn[aria-checked=false]:hover{background:#F5F6F9}
+.gc-iconbtn{border-radius:var(--pe-radius);width:44px;height:44px;color:#011F5B}
+.gc-iconbtn:hover:not(:disabled){background:#EDEFF4}
+.gc-pill,.gc-viewsel select{border:1px solid #B9BFCC;border-radius:var(--pe-radius);background-color:#fff;font-weight:600;color:#1B1F2A;font-family:inherit}
+.gc-pill:hover{background:#F5F6F9}
+.gc-textbtn{color:#011F5B;font-weight:600;border-radius:var(--pe-radius);text-decoration:underline;text-underline-offset:3px}
+.gc-textbtn:hover:not(:disabled){background:#EDEFF4}
+.gc-textbtn:disabled{text-decoration:none}
+.gc-search{border:1px solid #B9BFCC;border-radius:var(--pe-radius);background:#fff;color:#1B1F2A}
+.gc-search:focus{border-color:#011F5B;outline:none;box-shadow:0 0 0 1px #011F5B}
+.gc-title{font-size:20px;font-weight:700;letter-spacing:-.01em}
+.gc-range{border-bottom:1px solid #D9DCE3;color:#565C6B}
+.gc-side-h{font-size:14px;font-weight:700;color:#011F5B}
+.gc-side-hint{font-weight:400}
+
+/* interests: neutral checkboxes, no rainbow */
+.gc-cal{--c:#011F5B;border:1px solid #B9BFCC;border-radius:var(--pe-radius);font-weight:500;color:#1B1F2A;background:#fff}
+.gc-cal[aria-pressed=true]{border-color:#011F5B;background:#EDF0F8;color:#011F5B;font-weight:600}
+.gc-cal-box{width:16px;height:16px;border:1.5px solid #6B7285;border-radius:3px}
+.gc-cal[aria-pressed=true] .gc-cal-box{background:#011F5B;border-color:#011F5B}
+
+/* the feed */
+.gc-sched{background:transparent;padding:0;border-top:2px solid #011F5B}
+.gc-sched-day{grid-template-columns:76px minmax(0,1fr);gap:4px 12px;padding:16px 0 8px;border-bottom:1px solid #D9DCE3}
+.gc-sched-date{padding-top:2px;gap:0;align-items:flex-start}
+.gc-sched-num{display:block;width:auto;height:auto;border-radius:0;font-size:44px;line-height:1;font-weight:700;letter-spacing:-.03em;color:#011F5B;font-family:inherit;background:transparent!important}
+.gc-sched-wk{font-size:13px;font-weight:600;letter-spacing:0;color:#565C6B;text-transform:none;margin-top:4px;text-align:left}
+.gc-sched-date.gc-today .gc-sched-num{background:transparent;color:#011F5B}
+.gc-sched-date.gc-today .gc-sched-wk{color:#990000;font-weight:700}
+.gc-sched-list{gap:0}
+.gc-row{border-radius:0;padding:10px 0 14px;border-top:1px solid #EDEFF4;column-gap:0;grid-template-columns:minmax(0,1fr);grid-template-areas:"time" "title" "body"}
+.gc-sched-list>li:first-child .gc-row{border-top:0}
+.gc-row:hover{background:transparent}
+.gc-row:hover .gc-row-title{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px}
+.gc-row-dot{display:none}
+.gc-row-time{font-size:14px;font-weight:600;color:#565C6B;margin-bottom:2px;font-variant-numeric:tabular-nums}
+.gc-row-title{font-size:18px;line-height:1.25;font-weight:700;letter-spacing:-.01em;color:#011F5B}
+.gc-row-body{gap:3px;margin-top:6px}
+.gc-row-org{font-size:15px;font-weight:500;color:#1B1F2A}
+.gc-row-loc{font-size:14px;color:#565C6B}
+@media (min-width:768px){
+  .gc-sched-day{grid-template-columns:120px minmax(0,1fr)}
+  .gc-sched-date{flex-direction:column;align-items:flex-start}
+  .gc-sched-num{font-size:56px}
+  .gc-row{grid-template-columns:132px minmax(0,1fr);grid-template-areas:"time title" ". body";column-gap:16px}
+  .gc-row-time{margin:3px 0 0;font-size:14px}
+}
+
+/* facts on cards: eligibility is the primary line, everything else is quiet */
+.gc-app [data-testid=eligibility],.gc-pop [data-testid=eligibility]{font-size:14px;font-weight:600;color:#1B1F2A}
+.gc-app [data-testid=eligibility] svg,.gc-pop [data-testid=eligibility] svg{display:none}
+.gc-app .text-warn,.gc-pop .text-warn{color:#565C6B!important;font-weight:500!important}
+.gc-app .text-ok,.gc-pop .text-ok{color:#1B1F2A}
+.gc-app span[class*="rounded"][class*="px-1.5"],.gc-pop span[class*="rounded"][class*="px-1.5"]{border-radius:3px;font-weight:500}
+.gc-app .bg-warn\/15,.gc-pop .bg-warn\/15{background:#EDEFF4!important;color:#565C6B!important}
+.gc-app .bg-navy\/10,.gc-pop .bg-navy\/10{background:#E3E8F3!important;color:#011F5B!important}
+.gc-app .bg-line\/60{background:#EDEFF4!important}
+.gc-app .border-line{border-color:#B9BFCC}
+
+/* undated */
+.gc-tbd{margin-top:28px;padding:0;background:transparent;border-radius:0;border-top:2px solid #011F5B}
+.gc-tbd-h{margin:14px 0 0;font-size:22px;font-weight:700;letter-spacing:-.01em;color:#011F5B}
+.gc-tbd-note{margin:2px 0 6px;font-size:14px;color:#565C6B}
+.gc-tbd .gc-row,.gc-tbd .gc-sched-list .gc-row{grid-template-columns:minmax(0,1fr);grid-template-areas:"time" "title" "body";padding-left:0}
+@media (min-width:768px){.gc-tbd .gc-row{grid-template-columns:132px minmax(0,1fr);grid-template-areas:"time title" ". body"}}
+
+/* empty state */
+.gc-empty{border:1px solid #D9DCE3;border-radius:var(--pe-radius);background:#fff}
+
+/* week grid (optional view): neutral and flat */
+.gc-week-scroll{border:1px solid #D9DCE3;border-radius:var(--pe-radius);background:#fff}
+.gc-week-head{border-bottom:1px solid #B9BFCC}
+.gc-colhead-wk{font-size:12px;font-weight:600;letter-spacing:0;color:#565C6B;text-transform:none}
+.gc-colhead-num{width:auto;height:auto;border-radius:0;font-size:26px;font-weight:700;color:#011F5B;letter-spacing:-.02em;font-family:inherit}
+.gc-colhead.gc-today .gc-colhead-num{background:transparent;color:#990000}
+.gc-colhead.gc-today .gc-colhead-wk{color:#990000}
+.gc-colhead.gc-past .gc-colhead-num{color:#8A90A0}
+.gc-col{border-left:1px solid #E5E8EE}
+.gc-hline{border-top-color:#EDEFF4}
+.gc-hour,.gc-gutter-head{color:#6B7285}
+.gc-now{border-top-color:#990000}
+.gc-now::before{background:#990000}
+.gc-block{--c:#011F5B!important;background:#EDF0F8;color:#1B1F2A;border:1px solid #C3CBE0;border-radius:4px;box-shadow:none}
+.gc-block:hover{background:#DDE3F1;border-color:#011F5B;box-shadow:none}
+.gc-block-title{font-weight:700;color:#011F5B}
+.gc-block-time,.gc-block-meta{opacity:1;color:#565C6B}
+.gc-block-alert{background:#fff;border:1px solid #990000;color:#990000;border-radius:3px}
+.gc-noend{background-image:none!important;border-bottom:2px dashed #7A86A8}
+
+/* quick view */
+.gc-pop{border-radius:8px;background:#fff;border:1px solid #D9DCE3;box-shadow:0 8px 28px rgba(1,31,91,.16)}
+.gc-pop-swatch{display:none}
+.gc-pop-headrow{grid-template-columns:minmax(0,1fr)}
+.gc-pop-title{font-size:22px;font-weight:700;letter-spacing:-.01em;color:#011F5B}
+.gc-pop-date{color:#565C6B;font-weight:500}
+.gc-pop-row{color:#565C6B}
+
+/* actions */
+[data-testid=rsvp]{background:#011F5B!important;border-radius:var(--pe-radius)!important;font-weight:700!important;font-family:inherit}
+[data-testid=rsvp]:hover{background:#00164A!important}
+[data-testid=share]{border-radius:var(--pe-radius)!important;border-color:#B9BFCC!important;font-weight:600;font-family:inherit}
+
+/* deadlines inside 48 hours stay red and bold: urgency is the one place red is used */
+.gc-app [data-testid=deadline].text-penred,.gc-pop [data-testid=deadline].text-penred{color:#990000;font-weight:700}
+
+/* phones: filters first, then the feed */
+@media (max-width:959px){
+  .gc-cals{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;scroll-padding-inline:16px}
+  .gc-cals::-webkit-scrollbar{display:none}
+  .gc-cal{flex:none}
+}
+@media (min-width:960px){
+  .gc-app{grid-template-columns:232px minmax(0,1fr);gap:40px}
+  .gc-side{gap:22px}
+  .gc-cals{flex-direction:column;flex-wrap:nowrap;gap:2px}
+  .gc-cal{min-height:40px;border-color:transparent;background:transparent;padding:0 8px}
+  .gc-cal:hover{background:#EDEFF4}
+  .gc-cal[aria-pressed=true]{background:#EDF0F8;border-color:transparent}
+  .gc-side-year .gc-seg-btn{padding:0 12px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}

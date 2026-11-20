@@ -283,7 +283,7 @@ function PE_WeekGrid({ list, days, now, todayKey, onPick }) {
           PE_h(
             "div",
             { key: d.key, className: "gc-colhead" + (d.key === todayKey ? " gc-today" : "") + (d.key < todayKey ? " gc-past" : "") },
-            PE_h("span", { className: "gc-colhead-wk" }, d.wk.toUpperCase()),
+            PE_h("span", { className: "gc-colhead-wk" }, d.wk),
             PE_h("span", { className: "gc-colhead-num" }, d.num),
             PE_h("span", { className: "gc-sr" }, d.long)
           )
@@ -350,7 +350,7 @@ function PE_Schedule({ groups, now, todayKey, onOpen }) {
           "div",
           { className: "gc-sched-date" + (g.key === todayKey ? " gc-today" : ""), "aria-hidden": true },
           PE_h("span", { className: "gc-sched-num" }, d.num),
-          PE_h("span", { className: "gc-sched-wk" }, `${d.mon}, ${d.wk}`.toUpperCase())
+          PE_h("span", { className: "gc-sched-wk" }, `${d.wk}, ${d.mon}`)
         ),
         PE_h(
           "ul",
@@ -430,7 +430,7 @@ function PE_Undated({ list, now, onOpen }) {
 /* ---------- Finder ---------- */
 function PE_Finder({ events: allEvents, now, loadState, note, onOpen }) {
   const [f, setF] = E.useState(PE_loadFilters);
-  const [view, setView] = E.useState(() => f.view || (PE_wide() ? "week" : "schedule"));
+  const [view, setView] = E.useState(() => f.view || "schedule");
   const [pop, setPop] = E.useState(null);
   E.useEffect(() => {
     an.set(PE_FKEY, JSON.stringify({ ...f, view: f.view }));
@@ -512,7 +512,6 @@ function PE_Finder({ events: allEvents, now, loadState, note, onOpen }) {
       "aside",
       { className: "gc-side", "aria-labelledby": "filters-h" },
       PE_h("h2", { id: "filters-h", className: "gc-sr" }, "Filters"),
-      PE_h(PE_MiniMonth, { now, week: f.week, setWeek, eventDays }),
       PE_h(
         "div",
         { className: "gc-side-sec gc-side-year" },
