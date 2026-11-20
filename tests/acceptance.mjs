@@ -31,16 +31,16 @@ cur = '[1 year filter]';
 {
   const { page, errors } = await open(b, { role: 'view', now: NOW }); allErrors.push(errors);
   const all = await cards(page);
-  ok('All shows the unconfirmed event, labeled', all.some((c) => c.includes('Fall Cultural Night') && c.includes('Eligibility not confirmed.')));
+  ok('Unspecified eligibility is listed as open to all, and labeled as not specified', all.some((c) => c.includes('Fall Cultural Night') && c.includes('Open to all (not specified).')));
   await click(page, 'First-year'); let c = await cards(page);
-  ok('First-year hides unconfirmed eligibility', c.length > 0 && !c.some((x) => x.includes('Eligibility not confirmed')), JSON.stringify(await titles(page)));
+  ok('First-year includes events that did not state eligibility', c.some((x) => x.includes('Fall Cultural Night')), JSON.stringify(await titles(page)));
   ok('First-year hides sophomore-only', !c.some((x) => x.includes('Sophomore Case Interview Workshop')));
   ok('First-year keeps first-year-only + all-undergrad', c.some((x) => x.includes('First-Year Coffee Chats')) && c.some((x) => x.includes('Late Open Mic')));
   cur = '[2 restrictions]';
   ok('Wharton restriction stays visible under First-year', c.some((x) => x.includes('Wharton first-years and sophomores only.')));
   await click(page, 'Sophomore'); c = await cards(page);
   cur = '[1 year filter]';
-  ok('Sophomore hides first-year-only and unconfirmed', c.some((x) => x.includes('Sophomore Case Interview Workshop')) && !c.some((x) => x.includes('First-Year Coffee Chats') || x.includes('Eligibility not confirmed')));
+  ok('Sophomore hides first-year-only but keeps unspecified', c.some((x) => x.includes('Sophomore Case Interview Workshop')) && c.some((x) => x.includes('Fall Cultural Night')) && !c.some((x) => x.includes('First-Year Coffee Chats')));
   await click(page, 'Next week'); c = await cards(page);
   cur = '[2 restrictions]';
   const m = c.find((x) => x.includes('Trading Simulation Night')) || '';
@@ -126,7 +126,7 @@ cur = '[6 RSVP states]';
   d = await detail('t-badurl'); ok('javascript: RSVP link never rendered', !d.rsvp && !(await page.$('a[href^="javascript"]')));
   d = await detail('demo-tech-info-session'); ok('Closed registration: label + no action; job eligibility separate', d.text.includes('RSVP closed') && !d.rsvp && d.text.includes('JOB OR INTERNSHIP ELIGIBILITY'));
   d = await detail('demo-open-mic'); ok('No registration required state', d.text.includes('No registration required') && !d.rsvp);
-  d = await detail('demo-cultural-night'); ok('Registration details unconfirmed state', d.text.includes('Registration details unconfirmed') && d.text.includes('does not say who may attend'));
+  d = await detail('demo-cultural-night'); ok('Registration details unconfirmed state', d.text.includes('Registration details unconfirmed') && d.text.includes('did not say who may attend'));
   d = await detail('demo-first-year-coffee-chats'); ok('Registration optional state', d.text.includes('Registration optional'));
   await context.close();
 }

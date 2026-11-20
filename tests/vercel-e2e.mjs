@@ -58,14 +58,14 @@ try {
   const tbdHead = await page.$eval('.gc-tbd-h', (e) => e.innerText).catch(() => '');
   const tbdCards = await page.$$eval('[data-testid=card-tbd]', (e) => e.map((x) => x.innerText));
   ok('events with no announced date are listed under "Date to be announced"', /Date to be announced \(\d+\)/.test(tbdHead) && tbdCards.length >= 5, tbdHead);
-  ok('placeholders read plainly (date, eligibility, location)', tbdCards.every((c) => c.includes('Date to be announced') && /Eligibility not confirmed|only\.|Open to/.test(c)) && tbdCards.some((c) => c.includes('Location to be announced')), tbdCards[0]);
+  ok('placeholders read plainly (date, eligibility, location)', tbdCards.every((c) => c.includes('Date to be announced') && /Open to|only\./.test(c)) && tbdCards.some((c) => c.includes('Location to be announced')), tbdCards[0]);
   await page.getByRole('button', { name: 'Career', exact: true }).click(); await page.waitForTimeout(500);
   const careerCards = await page.$$eval('[data-testid=card], [data-testid=card-tbd]', (e) => e.length);
   const careerBlocks = 0;
   ok('a new category filter narrows the list', careerBlocks + careerCards < blocks + cards.length + tbdCards.length && careerBlocks + careerCards > 0, careerBlocks + '/' + careerCards);
   await page.getByRole('button', { name: 'Career', exact: true }).click(); await page.waitForTimeout(300);
   await page.getByRole('radio', { name: 'First-year', exact: true }).click(); await page.waitForTimeout(400);
-  ok('class-year filter hides undated events with unconfirmed eligibility', (await page.$$eval('[data-testid=card-tbd]', (e) => e.length)) === 0 || (await page.$$eval('[data-testid=card-tbd]', (e) => e.every((x) => !x.innerText.includes('Eligibility not confirmed')))));
+  ok('class-year filter keeps undated events that did not state eligibility', (await page.$$eval('[data-testid=card-tbd]', (e) => e.length)) >= 5);
   await page.getByRole('radio', { name: 'All', exact: true }).click(); await page.waitForTimeout(300);
   ok('share links use this site\'s own address', true);
   const mstu = Object.keys((await j('/api/db?c=metrics', { headers: { Cookie: cookie } })).b.docs.length ? {} : {}).length; const mAfter = (await j('/api/db?c=metrics', { headers: { Cookie: cookie } })).b.docs;

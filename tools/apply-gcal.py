@@ -21,6 +21,13 @@ rep('pi=["finance","consulting","tech","culture","other"],Ql={finance:"Finance",
 rep('subset of ["finance","consulting","tech","culture","other"]', 'subset of ["finance","consulting","tech","entrepreneurship","healthcare","career","academic","culture","social","arts","service","other"]')
 # an event with no announced date can be published; it appears under "Date to be announced"
 rep('!e.start&&e.status!=="postponed"&&t.push({text:"Start date and time are missing.",blocking:!0})','!e.start&&e.status!=="postponed"&&t.push({text:"Start date and time are missing. The event will be listed under \'Date to be announced\'.",blocking:!1})')
+# Eligibility the organizer did not state is treated as open to all undergraduates, and labeled as assumed.
+rep('function Oh(e,t){return t==="all"?!0:e.eligibilityStatus==="confirmed"&&e.eligibleYears.includes(t)}',
+    'function Oh(e,t){return t==="all"?!0:e.eligibilityStatus!=="confirmed"||e.eligibleYears.length===0?!0:e.eligibleYears.includes(t)}')
+rep('function Wo(e){if(e.eligibilityStatus!=="confirmed"||e.eligibleYears.length===0)return"Eligibility not confirmed.";',
+    'function Wo(e){if(e.eligibilityStatus!=="confirmed"||e.eligibleYears.length===0)return e.restrictions.membership?"Members only.":e.restrictions.school?.trim()?`${e.restrictions.school.trim()} students. Other eligibility not specified.`:"Open to all (not specified).";')
+rep('The announcement does not say who may attend. Check with the organizer before going.', 'The organizer did not say who may attend, so this is listed as open to all. Check with the organizer before going.')
+rep('Eligibility is not confirmed. The event will only appear under All and will be labeled.', 'Eligibility is not specified. The event will be listed as open to all, with a note that the organizer did not say.')
 rep('</head>', '<style id="pe-gc">' + css + '</style>\n</head>')
 open(dst, 'w').write(s)
 print('ok', len(s))

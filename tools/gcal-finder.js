@@ -218,7 +218,7 @@ function PE_Popover({ ev, now, anchor, onClose, onOpen }) {
       PE_h("div", { className: "gc-pop-row" }, PE_h(PE_Icon, { name: "pin" }), PE_h("div", null, ev.online ? "Online" : ev.location || "Location not announced")),
       PE_h("div", { className: "gc-pop-row" }, PE_h(PE_Icon, { name: "org" }), PE_h("div", null, ev.organizer)),
       ev.description ? PE_h("div", { className: "gc-pop-row" }, PE_h(PE_Icon, { name: "text" }), PE_h("p", { className: "gc-pop-desc" }, ev.description)) : null,
-      PE_h("div", { className: "gc-pop-row gc-pop-cats" }, PE_h("span", { className: "gc-icon-spacer" }), PE_h(qd, { e: ev })),
+      PE_h("div", { className: "gc-pop-row gc-pop-cats" }, PE_h("span", { className: "gc-icon-spacer" }), PE_h(PE_Cats, { e: ev })),
       PE_h(
         "div",
         { className: "gc-pop-foot" },
@@ -381,7 +381,7 @@ function PE_Schedule({ groups, now, todayKey, onOpen }) {
                   PE_h("p", { className: "gc-row-loc" }, PE_h(PE_Icon, { name: "pin", size: 14 }), ev.online ? "Online" : ev.location || "Location not announced"),
                   PE_h(Gd, { e: ev, now }),
                   PE_h(Zd, { e: ev, now }),
-                  PE_h(qd, { e: ev })
+                  PE_h(PE_Cats, { e: ev })
                 )
               )
             )
@@ -389,6 +389,14 @@ function PE_Schedule({ groups, now, todayKey, onOpen }) {
         )
       );
     })
+  );
+}
+
+function PE_Cats({ e }) {
+  return PE_h(
+    "div",
+    { className: "gc-cats" },
+    e.categories.map((c) => PE_h("span", { key: c, className: "gc-cat", style: { "--c": PE_CAT[c] || PE_CAT.other } }, PE_h("i", { "aria-hidden": true }), Ql[c] || c))
   );
 }
 
@@ -418,7 +426,7 @@ function PE_Undated({ list, now, onOpen }) {
               PE_h("p", { className: "gc-row-org" }, ev.organizer),
               PE_h("p", { className: "gc-row-loc" }, PE_h(PE_Icon, { name: "pin", size: 14 }), ev.online ? "Online" : ev.location || "Location to be announced"),
               PE_h(Gd, { e: ev, now }),
-              PE_h(qd, { e: ev })
+              PE_h(PE_Cats, { e: ev })
             )
           )
         )
@@ -493,7 +501,7 @@ function PE_Finder({ events: allEvents, now, loadState, note, onOpen }) {
           { className: "gc-empty", "data-testid": "empty", role: "status" },
           PE_h("p", { className: "gc-empty-title" }, `No events match ${describe}.`),
           f.year !== "all"
-            ? PE_h("p", { className: "gc-empty-note" }, `Only events that explicitly list ${PE_YEAR_PLURAL[f.year]} are shown. Events with unconfirmed eligibility appear under All.`)
+            ? PE_h("p", { className: "gc-empty-note" }, `Events for ${PE_YEAR_PLURAL[f.year]} are shown. Events that don't state eligibility count as open to all.`)
             : null,
           PE_h(
             "div",

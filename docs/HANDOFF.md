@@ -104,3 +104,7 @@ Not enabled. No scheduled task exists. A suggested cadence, pending your approva
 - Demo records are gone from the database, the seed and the repo's `data/`. Test-only fixtures live in `tests/fixtures/` and are never deployed.
 - `python3 -I tools/build-content.py data/live-export vercel/seed` rebuilds the seed (re-categorize, publish with placeholders, reject past drafts). The live store applies `vercel/seed/manifest.json` on the next request; records an admin has edited are never overwritten.
 - Build order: `tools/apply-gcal.py` then `tools/build-vercel.py` then `python3 tools/vercel-deploy.py`.
+
+## Update Nov 20: eligibility rule and design
+- Eligibility the organizer did not state is now treated as open to all undergraduates: it appears under every class-year filter and is labeled "Open to all (not specified)." The stored record keeps `eligibilityStatus: "unconfirmed"`, so the data stays honest and the rule can be changed in `tools/apply-gcal.py` (`Oh` and `Wo`).
+- Design: rounded cards on a light blue-gray page, navy date tiles (red for today), pill controls and colored category pills. Styles are in `tools/theme.css`.
