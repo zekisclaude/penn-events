@@ -59,7 +59,7 @@ h1.font-display{font-size:30px!important;line-height:1.1!important;font-weight:8
 
 /* filter panel */
 .gc-side .gc-seg{display:flex;width:100%}
-.gc-side .gc-seg-btn{flex:1;padding:0 6px;min-width:0}
+.gc-side .gc-seg-btn{flex:1 1 auto;padding:0 8px;min-width:0;font-size:13px;white-space:nowrap}
 .gc-side{background:#fff;border-radius:24px;padding:18px;box-shadow:var(--pe-card-shadow)}
 @media (min-width:960px){.gc-side{position:sticky;top:16px}}
 .gc-cals{gap:8px}
@@ -161,7 +161,7 @@ h1.font-display{font-size:30px!important;line-height:1.1!important;font-weight:8
   .gc-toolbar{margin-top:4px}
 }
 @media (min-width:960px){
-  .gc-app{grid-template-columns:248px minmax(0,1fr);gap:28px}
+  .gc-app{grid-template-columns:276px minmax(0,1fr);gap:28px}
   .gc-side{gap:22px}
   .gc-cals{flex-direction:column;flex-wrap:nowrap;gap:6px}
   .gc-cal{min-height:42px;justify-content:flex-start}
